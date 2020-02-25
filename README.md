@@ -8,7 +8,7 @@ This repository corresponds to the open-source analysis conducted by [NewTrails 
 - the figures that we chose to include in our report
 - the report itself, in markdown form
 
-Below you will find the [executive summary](#executive-summary) for our report and the [setup instructions](#setup-instructions) instructions for making use of our Python code.
+Below you will find the [executive summary](#executive-summary) for our report and the [setup instructions](#setup-instructions) for making use of our Python code.
 
 ## Executive Summary
 
