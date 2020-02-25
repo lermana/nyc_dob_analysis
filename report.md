@@ -19,7 +19,7 @@
 - [High-Level Trends](#high-level-trends)
 - [Applications and Permits](#applications-and-permits)
 - [Complaints and Violations](#complaints-and-violations)
-- [ECB Violations Penalties](#ecb-violations-penalties)
+- [Violation Penalties](#violation-penalties)
 - [Recommendations](#recommendations)
 - [Next Steps](#next-steps)
 - [Appendix](#appendix)
@@ -258,7 +258,9 @@ ECB violation types include construction, elevators, quality of life, boilers, l
 
 
 [^](#table-of-contents)
-## ECB Violations Penalties
+## Violation Penalties
+
+Unless otherwise noted, all charts here refer to DoB-issued ECB violations.
 
 #### Figure 8
 - [data](#figure-8-data)
