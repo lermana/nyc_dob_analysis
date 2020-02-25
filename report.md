@@ -14,7 +14,6 @@
 - [Executive Summary](#executive-summary)
 - [Acknowledgments](#acknowledgments)
 - [Background](#background)
-- [Methodology](#methodology)
 - [Data Overview](#data-overview)
 - [High-Level Trends](#high-level-trends)
 - [Applications and Permits](#applications-and-permits)
@@ -87,18 +86,21 @@ With all of that out of the way, we can note the following:
 - despite the average number of days between violation imposition and ECB hearing date falling to under 100 back in 2013, this metric (albeit with less standard deviation around it) has risen to over 125 days[<sup>\*</sup>](#figure-12-data)
 - the temporality with which the DoB issues its own, administrative violations, which may be a part of the procedure for enforcing penalty payment, is surprising in its irregularity[<sup>\*</sup>](#figure-17-data)
 
-More analysis on DoB and ECB penalties can be found [below](#violation-penalties), but it suffices to say that the ECB looks to be overwhelmed by the increase in issued violations of the last few years and as a result it may be having a hard time collecting the penalties for those violations.
+More analysis on DoB-issued ECB penalties can be found [below](#violation-penalties), but suffice it to say that the ECB looks to be overwhelmed by the increase in issued violations over the last few years, and it may be having a hard time collecting the penalties for those violations.
 
-In a relevant argument, Danielle Chaim recently [noted](https://clsbluesky.law.columbia.edu/2020/02/20/how-common-ownership-can-lead-to-tax-avoidance/) in Columbia Law School's _CLS Blue Sky Blog_ that a large number of firms all committing tax avoidance at the same increases the likelihood of the government becoming overwhelmed in its enforcement, thus increasing the probability of a decrease in enforcement rigor. It is important that the city engage in, and have the proper resources to engage in, rigorous enforcement of its building code, lest developers, landlords, and others come to believe that the consequences are low for flouting the rules. Even those industry practitioners who hold themselves to a higher standard may face pressure to cut corners if their competitors are repeatedly able to get away with delivering faster or cheaper solutions through kicking the metaphorical "consequence" can down the road. As we've already seen, such a culture can produce [severe consequences](https://www.nytimes.com/2019/12/30/nyregion/nyc-building-violations.html).
+In a relevant argument, Danielle Chaim recently [noted](https://clsbluesky.law.columbia.edu/2020/02/20/how-common-ownership-can-lead-to-tax-avoidance/) in Columbia Law School's _CLS Blue Sky Blog_ that a large number of firms all committing tax avoidance at the same increases the likelihood of the government becoming overwhelmed in its enforcement, thus descreasing the probability of enforcement action. It is important that the city engage in, and have the proper resources to engage in, rigorous enforcement of its building code, lest developers, landlords, and others come to believe that there are only light consequences for flouting the building code. Even those industry practitioners who hold themselves to a higher standard may face pressure to cut corners if their competitors are repeatedly able to get away with delivering faster or cheaper solutions through kicking the metaphorical "consequence" can down the road. As we've already seen, such a culture can produce [severe consequences](https://www.nytimes.com/2019/12/30/nyregion/nyc-building-violations.html).
 
 
 #### Recommendations
 
-The city needs to be more systematic in its enforcement of the building code and it should improve its speed on adjudication process. Also, the City need to factor in the increase in residential housing price when it price its penalty.
+The city needs to be more systematic in its enforcement of the building code, which includes ensuring that:
+- penalty payment is enforced
+- ECB hearings are held in a timely manner
+- penalty values grow at a reasonable rate
 
 #### Next steps
 
-We could further extend this analysis to borough-level and neighborhood-level. Moreover, finding the relationship between economic factors and penalty collection or imposition is of interest.
+We could further extend this analysis to borough-level and neighborhood-level. Moreover, roping in additional, economic variables could provide additional context. Finally, linking applications and permits to complaints and violations could help the city keep a handle on bad actors and preempt the types of work that are at a high-risk of heading in the wrpng direction.
 
 [^](#table-of-contents)
 ## Acknowledgments
@@ -117,15 +119,6 @@ Abe had spent months dealing with a variety of problems at his apartment. First,
 It had long been a hope that NewTrails would occasionally carve out time for interesting open-source work. Plus, what better way to gain familiarity with the new (to us) and exciting industry of real estate construction? And so it was that we set out to put our data science abilities to use in gaining an understanding of NYC's building codes and the DoB's enforcement of them. An early theory was that key, problematic actors were working as force multipliers in the construction space, engaging in bad behavior that would allow them to get through certain work-flows at higher speeds and / or lower costs, thus encouraging competitors to degrade their standards lest they lose market share. Given the level of depth and data-access required in order to properly solve such a problem, and our correspondingly limited time and lack of access to any non-public data, we whittled our ambitions down to answering the three, core questions laid out in our [problem statement](#problem-statement) over the course of a few months of part-time work.
 
 [^](#table-of-contents)
-## Methodology
-
-- grab publicly available data on OpenData
-- analyze the data using the Python programming language, some key, third-party libraries (`pandas`, `matplotlib`) and the `jupyter` notebook
-- given the part-time and open-source nature of the project, focus is more on successful, high-level, and practical conception of the problem and data
-- future efforts could involve taking a deeper look at certain aspects of the data
-Additionally, with the exception of two, specific charts, we filtered all data such that it fell in the years 2000 through 2019, looking at monthly or yearly figures, depending on which we feel made the most sense for a particular view into the data.
-
-[^](#table-of-contents)
 ## Data Overview
 
 #### Application Filings
@@ -137,7 +130,6 @@ Additionally, with the exception of two, specific charts, we filtered all data s
 This dataset corresponds to the applications filed, applications which - if approved - would yield permit(s), generally one permit for each type of work performed (e.g. electrical, plumbing, etc.). Unfortunately, this dataset was unusable for us post-2017 (and even somewhat for 2017) due to the fact that it does not include applications submitted through the _DoB NOW_ platform, and cannot be deterministically linked to those jobs, at least in any sort of way that would have fit with the level of granularity we have tried to achieve in this report. See the _DoB NOW: Build – Job Application Filings_ [dataset](https://data.cityofnewyork.us/Housing-Development/DOB-NOW-Build-Job-Application-Filings/w9ak-ipjd) for DoB NOW jobs. 
 
 The DoB has released a new system for permit application and issuance that it calls _DoB NOW_, which as of 2018 had already been used for issuing a majority of permits and which last year was responsible for almost all permits issued. The data (which we've linked to in the above paragraph) corresponding to the applications filed through this system, at the time of this writing, included neither any sort of application identifier that would have allowed us to link to applications filed in the other system, nor even _any sort of date field_. After making multiple requests for a date field, we were told that a ticket had been filed, and that there was no time estimate corresponding to when this field would be added.
-
 
 #### Permit Issuance
 
@@ -182,8 +174,6 @@ The Department of Buildings issues [ECB/OATH](https://www1.nyc.gov/site/building
 
 DoB Violations dataset provides the violations information that are less harmful than ECB violations. There are no penalty imposed or no need to go to court for adjudication. What deserve to mention is that some of violations, e.g. failure to file a Boiler or Elevator compliance filing with DoB, would be generated by computer periodically. This is part of the reason why there are many surprising spikes in figure 16.
 
-
-
 [^](#table-of-contents)
 ## High-Level Trends
 
@@ -198,8 +188,6 @@ We also saw that, on the aggregate, complaints and violations seemed to track ea
 What deserve to be mentioned is that there are more permits than applications for each year. Since a job application to DoB could potentially leads to different types of works, DoB would issue several work permits for one application. 
 
 Since around 2016, DoB started to put DoB NOW in use. [DoB NOW](https://www1.nyc.gov/site/buildings/industry/dob-now.page) is the Department of Building's self-service online tool that enables applicants to do all business with DoB online. We included the DoB NOW permits issuance here. However, we are limited in how we can make use of DoB NOW applications data, due to there (at the time of this writing) not being a date column in that data set. In this case, we estimated the total applications from 2017 to 2019 based on the applications-to-permits ratio in 2016. We assumed the rate to be constant in these three years for simplicity. The estimated numbers are showed in dotted line.
-
-
 
 #### Figure 2
 - [data](#figure-2-data)
@@ -229,7 +217,6 @@ Applications and permits tracks each other pretty well since 2000. In 2017, ther
 It's worth noting that, to very thoroughly consider whether the city has _over-indexed_ on construction, it would be worth exploring applications and permits against additional variables. For instance, what is the relationship between permitting rates and population density, in different parts of the city? Manhattan is geographically constrained by water on all four sides. So, outside of maybe the Hudson Yards project, where a no-so-inhabited nook of the city was developed freshly in new ways.
 
 The city has become somewhat more selective in terms of what jobs it approves. that permit applications and issuances were closely linkedPermit issuance rates peaked at around 86% back in 2006, and are now at around 75%. The number of complaints for _illegal conversions_ and _operating without a permit_ - top complaint categories - have decreased, while the number of elevator-related complaints has held steady for the last decade or so, and is close to its all-time high.
-
 
 [^](#table-of-contents)
 ## Complaints and Violations
@@ -292,7 +279,6 @@ The blue bar shows the amount of ECB violations was issue from 2000 to 2019. Vio
 - [data](#figure-11-data)
 ![ ](figures/normalized_and_paid_to_imposed_hearing.png  "normalized_and_paid_to_imposed")
 
-
 To further analyze paid to imposed ratio, we grouped the ECB violations by its hearing status by hearing year. Normalized penalty imposed represents the proportion of penalty imposed for each type of hearing status for each year. We mainly looked at two types of hearings, default and in violation, because they count for the top two highest amount of imposed penalty. 
 
 *Violation Status:* `DEFAULT`
@@ -319,7 +305,6 @@ There are nine types of hearing status as following:
 - `WRITTEN OFF`: Summons has been written off and nothing is due.
 - `DEFAULT`: Respondent failed to appear for scheduled hearing and did not pay the summons prior to the hearing.
 - `DISMISSED`: Dismissal – No Penalty Imposed; If you prevail in contesting your violation, you will not owe any penalties and your violation will be dismissed. However, the Department may re-inspect, reissue a violation, or appeal the decision.
-
 
 #### Figure 12
 - [data](#figure-12-data)
