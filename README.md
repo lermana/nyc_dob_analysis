@@ -8,7 +8,7 @@ This repository corresponds to the open-source analysis conducted by [NewTrails 
 - the figures that we chose to include in our report
 - the report itself, in markdown form
 
-Below you will find the executive summary for our report and the setup instructions for making use of our Python code.
+Below you will find the [executive summary](#executive-summary) for our report and the [setup instructions](#setup-instructions) instructions for making use of our Python code.
 
 ## Executive Summary
 
@@ -41,4 +41,6 @@ Once `pydob` has been installed and `DOB_DATA_DIR` set to your liking, you are r
 from pydob import build
 build()
 ```
-Note that, if you choose to rerun at some point (maybe due to network issues or your making of modifications to the code) you can pass `use_existing=True` to `build` to avoid re-downloading any DoB data that is already available in `DOB_DATA_DIR`. Also note that the DoB datasets each span roughly 1-2+M rows and 20-50 columns, which means that running `build` may take upwards of an hour and may require significant computational capacity from your local machine.
+Note that, if you choose to rerun at some point (maybe due to network issues or your making of modifications to the code) you can pass `use_existing=True` to `build` to avoid re-downloading any DoB data that is already available in `DOB_DATA_DIR`.
+
+Also note that the DoB datasets each span roughly 1-2+M rows and 20-50 columns, which means that running `build` may take upwards of an hour and may require significant computational capacity from your local machine.
