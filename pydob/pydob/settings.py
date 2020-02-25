@@ -11,7 +11,7 @@ if DATA_DIR is None:
         # change the below line to affect default behavior
         DATA_DIR = os.path.join(
                         os.path.expanduser('~'),
-                        "projects", "nyc_dob_violations", "data")
+                        "projects", "nyc_dob_analysis", "data")
 
     except FileNotFoundError:
         print("`DATA_DIR` variable not set up - check `pydob.settings`. Terminating.")
