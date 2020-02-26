@@ -91,14 +91,14 @@ More analysis on DoB-issued ECB penalties can be found [below](#violation-penalt
 In a relevant argument, Danielle Chaim recently [noted](https://clsbluesky.law.columbia.edu/2020/02/20/how-common-ownership-can-lead-to-tax-avoidance/) in Columbia Law School's _CLS Blue Sky Blog_ that a large number of firms all committing tax avoidance at the same increases the likelihood of the government becoming overwhelmed in its enforcement, thus descreasing the probability of enforcement action. It is important that the city engage in, and have the proper resources to engage in, rigorous enforcement of its building code, lest developers, landlords, and others come to believe that there are only light consequences for flouting the building code. Even those industry practitioners who hold themselves to a higher standard may face pressure to cut corners if their competitors are repeatedly able to get away with delivering faster or cheaper solutions through kicking the metaphorical "consequence" can down the road. As we've already seen, such a culture can produce [severe consequences](https://www.nytimes.com/2019/12/30/nyregion/nyc-building-violations.html).
 
 
-#### Recommendations
+#### Recommendations - Summary
 
 The city needs to be more systematic in its enforcement of the building code, which includes ensuring that:
 - penalty payment is enforced
 - ECB hearings are held in a timely manner
 - penalty values grow at a reasonable rate
 
-#### Next steps
+#### Next Steps - Summary
 
 We could further extend this analysis to borough-level and neighborhood-level. Moreover, roping in additional, economic variables could provide additional context. Finally, linking applications and permits to complaints and violations could help the city keep a handle on bad actors and preempt the types of work that are at a high-risk of heading in the wrpng direction.
 
@@ -127,36 +127,34 @@ It had long been a hope that NewTrails would occasionally carve out time for int
 - assumed primary key: `job`
 - assumed primary date column: `pre_filing_date`
 
-This dataset corresponds to the applications filed, applications which - if approved - would yield permit(s), generally one permit for each type of work performed (e.g. electrical, plumbing, etc.). Unfortunately, this dataset was unusable for us post-2017 (and even somewhat for 2017) due to the fact that it does not include applications submitted through the _DoB NOW_ platform, and cannot be deterministically linked to those jobs, at least in any sort of way that would have fit with the level of granularity we have tried to achieve in this report. See the _DoB NOW: Build – Job Application Filings_ [dataset](https://data.cityofnewyork.us/Housing-Development/DOB-NOW-Build-Job-Application-Filings/w9ak-ipjd) for DoB NOW jobs. 
+This dataset corresponds to the applications filed, applications which - if approved - would yield permit(s), generally one permit for each type of work performed (e.g. electrical, plumbing, etc.). Unfortunately, this dataset was unusable for us post-2017 (and even somewhat for 2017) due to the fact that it does not include applications submitted through the _DoB NOW_ platform, and cannot be deterministically linked to those jobs, at least in any sort of way that would have fit with the level of granularity we have tried to achieve in this report. See the DoB NOW appplications data [here](https://data.cityofnewyork.us/Housing-Development/DOB-NOW-Build-Job-Application-Filings/w9ak-ipjd). 
 
-The DoB has released a new system for permit application and issuance that it calls _DoB NOW_, which as of 2018 had already been used for issuing a majority of permits and which last year was responsible for almost all permits issued. The data (which we've linked to in the above paragraph) corresponding to the applications filed through this system, at the time of this writing, included neither any sort of application identifier that would have allowed us to link to applications filed in the other system, nor even _any sort of date field_. After making multiple requests for a date field, we were told that a ticket had been filed, and that there was no time estimate corresponding to when this field would be added.
+The DoB has released a new system for permit application and issuance that it calls _DoB NOW_. This system was used for about 1% of permit issuances in 2017, a majority of permit issuances in 2018, and almost all permit issuances last year. The data (which we've linked to in the above paragraph) corresponding to the applications filed through this system, at the time of this writing, included neither a unique application identifier that linked to previous system, nor any sort of date field. After making multiple requests for a date field, we were told that a ticket had been filed, and that there was no time estimate corresponding to when this field would be added.
 
-#### Permit Issuance
-
-Old system:
+#### Permit Issuance - Old
 
 - [data](https://data.cityofnewyork.us/Housing-Development/DoB-Permit-Issuance/ipu4-2q9a)
 - assumed primary key: combination of `permit_si_no` and 
 - assumed primary date column: `issuance_date`
 
-This dataset corresponds to permits issued by the Department of Buildings since 1989. Same as the application dataset, we have limitation on using this dataset later than 2017 because the new system DoB NOW was implemented that year. 
+This dataset corresponds to permits issued by the Department of Buildings since 1989.
 
-New system:
+#### Permit Issuance - New
 
 - [data](https://data.cityofnewyork.us/Housing-Development/DoB-NOW-Build-Approved-Permits/rbx6-tga4)
 - assumed primary key: `job_filing_number`
 - assumed primary date column: `issued_date`
 
-_DOB NOW: Build – Approved Permits_ [dataset](https://data.cityofnewyork.us/Housing-Development/DoB-NOW-Build-Approved-Permits/rbx6-tga4) provides list of all approved permits in DOB NOW since 2016. The new system was put in use from 2017. We were able to aggregate this data to the old dataset and to find total permit issue in each year by the date field `issued_date`. However, when it comes to aggregate the types of permits, we are very much limited since the type fields in DoB NOW do not reconcile the types in old system.
+Provides all permits approved through DOB NOW (first put to use in 2016). We were able to link this data to that of the old system, at least at the level of a year. However, there are differences in the permit types found in each system, which limited what we felt able to extract from the permit-type information.
 
 #### Complaints Received
 
 - [data](https://data.cityofnewyork.us/Housing-Development/DoB-Complaints-Received/eabe-havv)
 - assumed primary key: `complaint_number`
 - assumed primary date column: `date_entered`
-- de-duplicate on `complaint_number`
+- de-duplicated on `complaint_number` due to the reappearance of complaints in the data, as complaint status is updated
 
-Complaints received dataset corresponds complaints received by Department of Buildings (DoB). It includes complaints that come from 311, that are called in to DoB's Customer Service Center, and that are entered into the system by DoB staff. After communicating with the stakeholder from DoB, we dropped the duplicates in `complaint_number`. 
+This dataset corresponds to complaints received by Department of Buildings (DoB). It includes complaints originating with 311, those that were called into the DoB's Customer Service Center, and those that were directly entered into the system by DoB staff (e.g. building inspectors).
 
 #### ECB Violations
 
@@ -165,37 +163,39 @@ Complaints received dataset corresponds complaints received by Department of Bui
 - assumed primary date column: `issue_date`
 - de-null `issue_date`
 
-The Department of Buildings issues [ECB/OATH](https://www1.nyc.gov/site/buildings/business/environmental-control-board-violations.page) violations when a property is not in compliance with either New York City construction codes or zoning resolutions[<sup>\*</sup>](https://www.propertyshark.com/Real-Estate-Reports/2018/11/26/breaking-down-new-york-city-violations-hpd-dob-ecb/). These violations are adjudicated by OATH and generally apply to offenses that are more harmful in nature than those covered by the more-administrative, non-ECB DoB violations. This dataset includes details of ECB violations going back to the 1990s. We dropped violations with null `issue_date` values, as this date field was core to our analysis and these values accounted for less than 0.005% of all values `issue_date`.
+The DoB issued [ECB/OATH](https://www1.nyc.gov/site/buildings/business/environmental-control-board-violations.page) violations when a property is not in compliance with either New York City construction codes or zoning resolutions[<sup>\*</sup>](https://www.propertyshark.com/Real-Estate-Reports/2018/11/26/breaking-down-new-york-city-violations-hpd-dob-ecb/). These violations are adjudicated by OATH and generally apply to offenses that are more harmful in nature than those covered by the more-administrative, non-ECB DoB violations. This dataset includes details of ECB violations going back to the 1990s. We dropped violations with null `issue_date` values, as this date field was core to our analysis and these values accounted for less than 0.005% of all values `issue_date`.
+
+Please note that, unless we explicitly state otherwise, all "violations" discussed are taken to be DoB-issued ECB violations.
 
 #### DoB Violations
 - [data](https://data.cityofnewyork.us/Housing-Development/DOB-Violations/3h2n-5cm9)
 - assumed primary date column: `issue_date`
 - de-null `issue_date`
 
-DoB Violations dataset provides the violations information that are less harmful than ECB violations. There are no penalty imposed or no need to go to court for adjudication. What deserve to mention is that some of violations, e.g. failure to file a Boiler or Elevator compliance filing with DoB, would be generated by computer periodically. This is part of the reason why there are many surprising spikes in figure 16.
+This dataset provides information on the DoB's own violations, which generally correspond to violations that are more administrative and less harmful than those covered by ECB violations. Some of these violations, e.g. those corresponding to make the proper Boiler or Elevator filing with DoB, might be periodically auto-generated, which explains some of the irregular temporality we saw in this data.
 
 [^](#table-of-contents)
 ## High-Level Trends
 
-For one, as many in real estate already know, there's a cyclical nature to construction activity in the city. We saw large increases in permit applications and issuances in the years immediately preceding the Great Recession (mid-aughts), and we saw another large run up from 2009 to around 2016 or 2017.
+For one, as many in real estate already know, there's a cyclical nature to construction activity in the city. This is common in high-capEx industries such as construction or oil extraction where getting to a revenue-producing product requires heavy upfront spending, leaving market partipants sensitive to long-term signals, due to their heavy exposure and lack of agility. These signals, however, may be both imperfect and followed by many a market participant. Crowding can lead to supply guts (price dips), pullbacks (price increases), and eventual reivestment (in pursuit of the higher prices). We saw large increases in permit applications and issuances in the years immediately preceding the Great Recession (mid-aughts), and we saw another large run up from 2009 to around 2016 or 2017.
 
 #### Figure 1
 - [data](#figure-1-data)
 ![ ](figures/percent_change_all.png  "percent_change_all")
 
-We also saw that, on the aggregate, complaints and violations seemed to track each other pretty well. However, we saw that these two (complaints and violations) seem to lag behind permit applications and issuances by about two years. We look to be in the midst of a downswing in construction-related activity. (quantify the lag, and use this as the basis for price predictions later)
+We also saw that, on the aggregate, complaints and violations track each other pretty well. However, we saw that these two (complaints and violations) seem to lag behind permit applications and issuances by about two years. We look to be in the midst of a plataeuing, or maybe even the beginnings of a downswing, in permitting activity. It's worth mentioning that there are more permits than applications each year since a single application might cover more than one type of work at a given job, with each type potentially receiving its own permit from the DoB.
 
-What deserve to be mentioned is that there are more permits than applications for each year. Since a job application to DoB could potentially leads to different types of works, DoB would issue several work permits for one application. 
+As has already been noted the DoB has implemented a new system for applications and permitting known as [_DoB NOW_](https://www1.nyc.gov/site/buildings/industry/dob-now.page). This is the Department of Building's self-service online tool that enables applicants to do all business with the DoB online. We included the DoB NOW permits issuance here starting from 2017 (the number of permits issued through DoB NOW in 2016 was negligible).
 
-Since around 2016, DoB started to put DoB NOW in use. [DoB NOW](https://www1.nyc.gov/site/buildings/industry/dob-now.page) is the Department of Building's self-service online tool that enables applicants to do all business with DoB online. We included the DoB NOW permits issuance here. However, we are limited in how we can make use of DoB NOW applications data, due to there (at the time of this writing) not being a date column in that data set. In this case, we estimated the total applications from 2017 to 2019 based on the applications-to-permits ratio in 2016. We assumed the rate to be constant in these three years for simplicity. The estimated numbers are showed in dotted line.
+However, as has already been mentioned, we were limited in how we could make use of the DoB NOW applications data, due to there (at the time of this writing) not being a date column in that data set. As such, we estimated total annual applications from 2017 to 2019 based on applying the applications-to-permits ratio in 2016 to the number of permits issued in each of these subequent years. This method was chosen for the sake of simplicity. The estimated numbers are showed with a dotted line.
 
 #### Figure 2
 - [data](#figure-2-data)
 ![ ](figures/autocorrelations_all_yearly.png  "autocorrelations_all_yearly")
 
-Autocorrelation represents the relationship between a variable's current value and its past value. Figure 2 shows the autocorrelation in monthly changes in permits, complaints and violations. Autocorrelation of 1 indicates a perfect positive correlation and -1 shows a perfect negative correlation. In this research, we are interested in 30 months autocorrelations.
+Autocorrelation represents "the correlation of a signal with a delayed copy of itself," as per [Wikipedia](https://en.wikipedia.org/wiki/Autocorrelation). Figure 2 shows the autocorrelation in monthly percent changes in permits, complaints, and violations. As with [correlation](https://en.wikipedia.org/wiki/Correlation_and_dependence), an autocorrelation of 1 indicates a perfect and positive correlation, while an autocorrelation of -1 shows a perfect and negative correlation - an autocorrelation of 0 indicates a lack of correlation. We looked at the autocorrelations of lags / shifted values 1 through 30.
 
-The permits autocorrelations shows that there appears to be a strong relationship between permits issued in the current month and the same month in the previous year, since the autocorrelation of permits issuance at lag 12 reaches to 0.71. The autocorrelations in complaints also reached to the highest point 0.45 at lag 12, indicating similar relation as in permits. In violations, we are not able to identify this pattern as strong as it is in permits. The autocorrelation is 0.3 at lag 12 which could represent there is some auto-regression in violations. 
+The permits data exhibited very strong autocorrelation at a lag of 12, i.e. between permits issued in the current month and in the same month in the previous year, reaching .71. We imagine that this is driven by auto-renewals. Autocorrelation in complaints also reached its highest point, 0.45, at lag 12 - this could be driven by auto-generated complaints, but we don't know. In violations, we again found the strongest autocorrelation, 0.3 at lag 12.
 
 [^](#table-of-contents)
 ## Applications and Permits
@@ -204,19 +204,31 @@ The permits autocorrelations shows that there appears to be a strong relationshi
 - [data](#figure-3-data)
 ![ ](figures/percent_change_appli_permits.png  "pct_change_application_and_permits_yearly")
 
-**Xiaofeng**
-New York City issued 197,556, 195,817 and 192,399 permits each year from 2017 to 2019, including the regular DoB permits as well as the ones issued by DoB NOW. With in that, 195,343, 169,377 and 152,212 permits were issued by regular. DoB NOW contributed 2,213, 26,440 and 40,187 on the other hand. The DoB has been pushing its DoB NOW system as the desired standard and the system has been accounting for a non-negligible portion activity since 2018. 
+New York City issued 197,556, 195,817 and 192,399 permits each year from 2017 to 2019, including the regular / old-system DoB permits as well as those issued by DoB NOW. To break it down by system (over the same, three-year period):
+
+- 195,343
+- 169,377
+- 152,212
+
+permits were issued through the old system, while:
+
+- 2,213
+- 26,440
+- 40,187
+
+went through DoB NOW. The DoB has been pushing its DoB NOW system as the desired standard and the system has been accounting for an increasing portion of permit issuances each year.
+
+Applications and permits tracked each other well over the time period study - the vast majority of applications are approved. In 2017, there are 94% more permits issued, as compared to the year 2000. The climb in permit issuance since the recession shows that the real estate market has been recovering well, but that it may be cooling off, having hit its all-time high in 2017
 
 #### Figure 4
 - [data](#figure-4-data)
 ![ ](figures/permit_types.png  "permit_types")
 
-Applications and permits tracks each other pretty well since 2000. In 2017, there are 94% more permits issued comparing to the number in 2000. The climb in permit issuance after recession shows that the real estate market was recovering since then and reached its all time high in 2017. The heat in real estate clams down a little after 2017 and decreased to slightly below 90%. 
+We can see here the tremendous growth in "Construction Equipment" permits issued, although it would be nice to know more about what this means - do these types of permits tie more closely to new-building construction?
 
-**Abe**
-It's worth noting that, to very thoroughly consider whether the city has _over-indexed_ on construction, it would be worth exploring applications and permits against additional variables. For instance, what is the relationship between permitting rates and population density, in different parts of the city? Manhattan is geographically constrained by water on all four sides. So, outside of maybe the Hudson Yards project, where a no-so-inhabited nook of the city was developed freshly in new ways.
+It's important to note that, to thoroughly consider whether the city has _over-indexed_ on construction, it would be worth exploring applications and permits against additional variables. For instance, what is the relationship between permitting rates and population density, in different parts of the city? Manhattan is geographically constrained by water on all four sides. So, outside of maybe the Hudson Yards project, where a not-so-inhabited nook of the city was developed freshly in new ways, construction will be felt much more heavily in most parts of Manhattan than, say, in deep Brooklyn.
 
-The city has become somewhat more selective in terms of what jobs it approves. that permit applications and issuances were closely linkedPermit issuance rates peaked at around 86% back in 2006, and are now at around 75%. The number of complaints for _illegal conversions_ and _operating without a permit_ - top complaint categories - have decreased, while the number of elevator-related complaints has held steady for the last decade or so, and is close to its all-time high.
+One of the great catch-22's of modern life in NYC can be found in the interplay between cost of living and construction-related, quality-of-life issues: we want reasonable rent, but we hate the effects of the construction that helps increase supply to a point where prices might fall.
 
 [^](#table-of-contents)
 ## Complaints and Violations
@@ -246,8 +258,6 @@ ECB violation types include construction, elevators, quality of life, boilers, l
 
 [^](#table-of-contents)
 ## Violation Penalties
-
-Unless otherwise noted, all charts here refer to DoB-issued ECB violations.
 
 #### Figure 8
 - [data](#figure-8-data)
@@ -392,7 +402,7 @@ This table shows percentage of ECB Violation counts, percentage of imposed penal
 - [data](#figure-17-data)
 ![ ](figures/violation_spikes.png  "dob_violation_counts")
 
-We grouped DoB violations by issued year and month from 2000 to 2019 to understand the trend in violation issuance over years. DoB Violation is a notice without penalty, which is very different from ECB violation. The periodic spikes for each year are most likely the computer generated violations from time to time. 
+We grouped DoB violations by issued year and month from 2000 to 2019 to understand the trend in violation issuance over years. DoB Violation is a notice without penalty, which is very different from ECB violation. The periodic spikes for each year are most likely the computer generated violations from time to time.  We were unable to come to a conclusion on whether a default on a DoB-issued ECB violation would yield a DoB violation. If this is this the case, the jagged temporality of this data could be aggravating efforts to enforce payment on DoB-issued ECB violations.
 
 --
 
