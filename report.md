@@ -127,9 +127,11 @@ It had long been a hope that NewTrails would occasionally carve out time for int
 - assumed primary key: `job`
 - assumed primary date column: `pre_filing_date`
 
-This dataset corresponds to the applications filed, applications which - if approved - would yield permit(s), generally one permit for each type of work performed (e.g. electrical, plumbing, etc.). Unfortunately, this dataset was unusable for us post-2017 (and even somewhat for 2017) due to the fact that it does not include applications submitted through the _DOB NOW_ platform, and cannot be deterministically linked to those jobs, at least in any sort of way that would have fit with the level of granularity we have tried to achieve in this report. See the DOB NOW appplications data [here](https://data.cityofnewyork.us/Housing-Development/DOB-NOW-Build-Job-Application-Filings/w9ak-ipjd). 
+This dataset corresponds to the applications filed, applications which - if approved - would yield permit(s), generally one permit for each type of work performed (e.g. electrical, plumbing, etc.). Unfortunately, this dataset was unusable for us post-2017 (and even somewhat for 2017) due to the fact that it does not include applications submitted through the DoB's new platform, and cannot be deterministically linked to those new jobs, at least not in any sort of way that would have fit with the level of granularity we have tried to achieve in this report. 
 
 The DoB has released a new system for permit application and issuance that it calls _DOB NOW_. This system was used for about 1% of permit issuances in 2017, a majority of permit issuances in 2018, and almost all permit issuances last year. The data (which we've linked to in the above paragraph) corresponding to the applications filed through this system, at the time of this writing, included neither a unique application identifier that linked to previous system, nor any sort of date field. After making multiple requests for a date field, we were told that a ticket had been filed, and that there was no time estimate corresponding to when this field would be added.
+
+See the DOB NOW appplications data [here](https://data.cityofnewyork.us/Housing-Development/DOB-NOW-Build-Job-Application-Filings/w9ak-ipjd).
 
 #### Permit Issuance - Old
 
