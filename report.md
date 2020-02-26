@@ -342,7 +342,9 @@ There are nine types of hearing status as following:
 - [data](#figure-12-data)
 ![ ](figures/ecb_hearing_imposed_daysdelta.png  "hearing_issue_days_delta")
 
-All ECB violations need to be adjudicated by the Office of Administrative Trials and Hearings (OATH), so we analyzed the day-differences between hearing and issue dates across all DoB-issued ECB violations, broken out by year. The above chart shows us the average number of days that it took for OATH/ECB to hold a hearing (i.e. the delta, in days, between hearing and issue dates) from 2000 to 2019 (issue date year). The blue bars represent the average days-delta for each year and the black lines represent the standard deviation around those averages. A higher error bar indicates more volatility in the days-delta for that year.
+All ECB violations need to be adjudicated by the Office of Administrative Trials and Hearings (OATH), so we analyzed the day-differences between hearing and issue dates across all DoB-issued ECB violations, broken out by year.
+
+The above chart shows us the average number of days that it took for OATH/ECB to hold a hearing (i.e. the delta, in days, between hearing and issue dates) from 2000 to 2019 (issue date year). The blue bars represent the average days-delta for each year and the black lines represent the standard deviation around those averages. A higher error bar indicates more volatility in the days-delta for that year.
 
 While the average days-delta fell to 97 in 2013, it has since climbed to to 127, an increase of around 30%. It's worth noting that the standard deviation has decreased noticeably over the same number of years. So, OATH/ECB is getting more consistent in its violation-hearing scheduling, but the typical time-to-schedule has increased a bit. 
 
