@@ -325,6 +325,7 @@ Additionally, with such a high % of penalty dollar-value in default each year, i
 DoB-issued ECB violations with hearing status `IN VIOLATION` in the last decade typically accounted for around around 40% of the total dollar value of all DoB ECB penalties imposed each year. The paid-to-imposed ratio for these penalties peaked at 76% in 2016 and has since fallen - to 75% in 2017, 67% in 2018, and 48% last year. One reason for this decline could be the massive increase in DoB ECB Violations issued over the last few years. 
 
 *Violation Status: All*
+
 There are nine types of hearing status as following: 
 
 - `IN VIOLATION`: Definition unknown.
