@@ -346,7 +346,7 @@ All ECB violations need to be adjudicated by the Office of Administrative Trials
 
 The above chart shows us the average number of days that it took for OATH/ECB to hold a hearing (i.e. the delta, in days, between hearing and issue dates) from 2000 to 2019 (issue date year). The blue bars represent the average days-delta for each year and the black lines represent the standard deviation around those averages. A higher error bar indicates more volatility in the days-delta for that year.
 
-While the average days-delta fell to 97 in 2013, it has since climbed to to 127, an increase of around 30%. It's worth noting that the standard deviation has decreased noticeably over the same number of years. So, OATH/ECB is getting more consistent in its violation-hearing scheduling, but the typical time-to-schedule has increased a bit. 
+While the average days-delta fell to 97 in 2013, it has since climbed to to 127, an increase of around 30%. It's worth noting that the standard deviation has decreased noticeably over the same number of years. So, OATH/ECB is getting more consistent in its violation-hearing scheduling, but the typical time-to-hearing has increased a bit. 
 
 #### Figure 13
 
@@ -364,15 +364,19 @@ While the average days-delta fell to 97 in 2013, it has since climbed to to 127,
 |99.90	       |811          |  576
 |99.99	       |965          |	656
 
-We further analyze the days-delta values described [above](#figure-12) through looking at some different [percentiles](https://en.wikipedia.org/wiki/Percentile) for this measure, in both 2017 and 2018. The value for a given percentile represents the value below with a given percent of the data lies. For instance, the median is (at least within this context) the 50th percentile.
+We further analyze the days-delta values described [above](#figure-12) through looking at some different [percentiles](https://en.wikipedia.org/wiki/Percentile) for this measure, in both 2017 and 2018. The value for a given percentile represents the value below which a given percent of the data lies. For instance, the median (it would be reasonable to say) is the 50th percentile.
 
-We highlight the 95th percentile to substantiate the claim that most violations have been heard within a year. In 2017, 95% of DoB-issued ECB violations saw hearings within 310 days of issuance. The 95% percentile of days-delta was in 2018. Penalty is imposed at hearing and is, as far as we know, due pretty much immediately, unless some other agreement has been made. Thus, a full year (or 365 days) seems a good window over which to judge penalty collection, which adds strength to our paid-penalty analyses accompanying Figures 9 and 10.
+We highlight the 95th percentile to substantiate the claim that most violations have been heard within a year. In 2017, 95% of DoB-issued ECB violations saw hearings within 310 days of issuance. The 95% percentile of days-delta was in 2018. Penalty is imposed at hearing and is, as far as we know, due pretty much immediately, unless some other agreement has been made.
+
+Thus, a full year (or 365 days) seems a good window over which to judge penalty collection, which adds strength to our paid-penalty analyses accompanying Figures 9 and 10.
 
 #### Figure 14
 - [data](#figure-14-data)
 ![ ](figures/active_resolved_ecb.png  "active_and_resolved_ecbs")
 
-Active ECB violations are violations that still need to be addressed, whereas resolved ECB violations have either been cured, paid, or dismissed. The above graph shows the breakdown of ECB violations, by status that have been heard as of 2019 (we are grouping by hearing date). Active-to-total has held at at least 20% since 2001, and hit 30% in 2018, highlighting that the city has been kept busy with all the recently issued violations.
+Active ECB violations are violations that still need to be addressed, whereas resolved ECB violations have either been cured, paid, or dismissed. The above graph shows the breakdown of ECB violations, by status, which have been heard as of 2019 (we are grouping by hearing date).
+
+Active-to-total has held at at least 20% since 2001, and hit 30% in 2018, highlighting that the city has been kept busy with all the recently issued violations.
 
 #### Figure 15
 - [data](#figure-15-data)
@@ -387,7 +391,9 @@ We were interested in assessing whether, as it did when broken out by violation 
 - 10,000-50,000
 - 50,000-100,000
 
-and we looked at this data over the past 4 years. From 2016 to 2019, paid-to-imposed ratios decreased as the imposed-penalty bin boundaries went higher. Paid-to-imposed ratios - even in 2018 - were close to 80% for the two lowest bins. However, these ratios plummeted in the higher bins, falling to 20% and below - even in 2019 - for the two highest bins. Thus, it would appear that the city has trouble collecting on its steeper penalties.
+and we looked at this data over the past 4 years. From 2016 to 2019, paid-to-imposed ratios decreased as the imposed-penalty bin boundaries went higher. Paid-to-imposed ratios - even in 2018 - were close to 80% for the two lowest bins. However, these ratios plummeted in the higher bins, falling to 20% and below - even in 2019 - for the two highest bins.
+
+It would appear that the city has trouble collecting on its steeper penalties.
 
 #### Figure 16
  
@@ -440,7 +446,7 @@ as well as the paid-to-imposed ratios, all broken out by year and by violation t
 
 We can see that `Construction` violations account for the lionshare of both the number of issued penalties and the total dollar-value of imposed penalties. Additionally, we can see that `Construction` violations show a pretty poor paid-to-imposed ratio, which when paired with the outsized contributions to `Normalized Violation Counts` leads to a large percentage of violations not being paid. It would seem, then, that `Construction` violations are driving much of the recent declines in overall paid-to-imposed ratio, which supports the idea that developers treat these violations as simply a cost of doing business.
 
-For instance, with a paid-to-imposed ratio of just .3 in 2018 but a .77 contribution to all penalty dollars imposed, `Construction` penalties in 2018 single-handedly accounted for 54% of all violations issued that year not being paid within that year.
+For instance, with a paid-to-imposed ratio of just 30% in 2018 but a 78% contribution to all penalty dollars imposed, `Construction` penalties in 2018 single-handedly accounted for 55% of all violation-dollars imposed that year not being paid.
 
 `Quality of Life` violations took an even more drastic tumble, with regard to paid-to-imposed ratio. These account for only a small percent of the total dollar-value of imposed penalties, although this number grew noticeably between 2018 and 2019.
 
@@ -450,9 +456,11 @@ For instance, with a paid-to-imposed ratio of just .3 in 2018 but a .77 contribu
 
 We grouped (non-ECB) DoB violations by issued year and monthfrom 2000 to 2019 to allow us to understand the trend in the issuance of these violations over the years.
 
-As has already been mentioned, the periodic spikes probably coincide to auto-generated violations that are issued from time to time. That doesn't mean this chart didn't look surprising to us! Something like yearly autocorrelation (as we saw [above](#figure-2)) was to be expected - but clusters around the same calendar month each year, that was surprising.
+As has already been mentioned, the periodic spikes probably coincide with auto-generated violations that are issued from time to time. That doesn't mean that this chart didn't look surprising to us! Something like yearly autocorrelation (as we saw [above](#figure-2)) was to be expected - but clusters around the same calendar month each year, that was surprising.
 
-We were unable to come to a conclusion on whether a default on a DoB-issued ECB violation yields a DoB violation - this is an important question that we're hoping someone can answer for us. If that is the case, the jagged temporality of this data could be aggravating efforts to enforce payment on DoB-issued ECB violations, as perpetrators might be either confused about the consequences for penalty default, or aware of the fact that further penalties may be more tied to the calendar month than the date of default, which seems odd.
+We were unable to come to a conclusion on whether a default on a DoB-issued ECB violation yields a DoB violation - this is an important question that we're hoping someone can answer for us. If that is the case, the jagged temporality of this data could be aggravating efforts to enforce payment on DoB-issued ECB violations, as perpetrators might be either confused about the consequences for penalty default, or aware of the fact that further penalties may be more tied to the calendar month than the date of default.
+
+This last clause, that "further penalties may be more tied to the calendar month than the date of default," would (if true) indicate some room for improvement in this default-penalization process. 
 
 [^](#table-of-contents)
 ## Recommendations
