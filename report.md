@@ -127,9 +127,9 @@ It had long been a hope that NewTrails would occasionally carve out time for int
 - assumed primary key: `job`
 - assumed primary date column: `pre_filing_date`
 
-This dataset corresponds to the applications filed, applications which - if approved - would yield permit(s), generally one permit for each type of work performed (e.g. electrical, plumbing, etc.). Unfortunately, this dataset was unusable for us post-2017 (and even somewhat for 2017) due to the fact that it does not include applications submitted through the _DoB NOW_ platform, and cannot be deterministically linked to those jobs, at least in any sort of way that would have fit with the level of granularity we have tried to achieve in this report. See the DoB NOW appplications data [here](https://data.cityofnewyork.us/Housing-Development/DOB-NOW-Build-Job-Application-Filings/w9ak-ipjd). 
+This dataset corresponds to the applications filed, applications which - if approved - would yield permit(s), generally one permit for each type of work performed (e.g. electrical, plumbing, etc.). Unfortunately, this dataset was unusable for us post-2017 (and even somewhat for 2017) due to the fact that it does not include applications submitted through the _DOB NOW_ platform, and cannot be deterministically linked to those jobs, at least in any sort of way that would have fit with the level of granularity we have tried to achieve in this report. See the DOB NOW appplications data [here](https://data.cityofnewyork.us/Housing-Development/DOB-NOW-Build-Job-Application-Filings/w9ak-ipjd). 
 
-The DoB has released a new system for permit application and issuance that it calls _DoB NOW_. This system was used for about 1% of permit issuances in 2017, a majority of permit issuances in 2018, and almost all permit issuances last year. The data (which we've linked to in the above paragraph) corresponding to the applications filed through this system, at the time of this writing, included neither a unique application identifier that linked to previous system, nor any sort of date field. After making multiple requests for a date field, we were told that a ticket had been filed, and that there was no time estimate corresponding to when this field would be added.
+The DoB has released a new system for permit application and issuance that it calls _DOB NOW_. This system was used for about 1% of permit issuances in 2017, a majority of permit issuances in 2018, and almost all permit issuances last year. The data (which we've linked to in the above paragraph) corresponding to the applications filed through this system, at the time of this writing, included neither a unique application identifier that linked to previous system, nor any sort of date field. After making multiple requests for a date field, we were told that a ticket had been filed, and that there was no time estimate corresponding to when this field would be added.
 
 #### Permit Issuance - Old
 
@@ -185,9 +185,9 @@ As many in real estate already know, there's a cyclical nature to construction a
 
 We also saw that, on the aggregate, complaints and violations track each other pretty well. However, we saw that these two (complaints and violations) seem to lag behind permit applications and issuances by about two years. We look to be in the midst of a plataeuing, or maybe even the beginnings of a downswing, in permitting activity. It's worth mentioning that there are more permits than applications each year since a single application might cover more than one type of work at a given job, with each type potentially receiving its own permit from the DoB.
 
-As has already been noted the DoB has implemented a new system for applications and permitting known as [DoB NOW](https://www1.nyc.gov/site/buildings/industry/dob-now.page). This is the Department of Building's self-service online tool that enables applicants to do all business with the DoB online. We included the DoB NOW permits starting from 2017 (the number of permits issued through DoB NOW in 2016 was negligible).
+As has already been noted the DoB has implemented a new system for applications and permitting known as [DOB NOW](https://www1.nyc.gov/site/buildings/industry/dob-now.page). This is the Department of Building's self-service online tool that enables applicants to do all business with the DoB online. We included the DOB NOW permits starting from 2017 (the number of permits issued through DOB NOW in 2016 was negligible).
 
-However, as has already been mentioned, we were limited in how we could make use of the DoB NOW applications data, due to there (at the time of this writing) not being a date column in that data set. As such, we estimated total annual applications from 2017 to 2019 based on applying the applications-to-permits ratio in 2016 to the number of permits issued in each of these subequent years. This method was chosen for the sake of simplicity. The estimated numbers are showed with a dotted line.
+However, as has already been mentioned, we were limited in how we could make use of the DOB NOW applications data, due to there (at the time of this writing) not being a date column in that data set. As such, we estimated total annual applications from 2017 to 2019 based on applying the applications-to-permits ratio in 2016 to the number of permits issued in each of these subequent years. This method was chosen for the sake of simplicity. The estimated numbers are showed with a dotted line.
 
 #### Figure 2
 - [data](#figure-2-data)
@@ -204,7 +204,7 @@ The permits data exhibited very strong autocorrelation at a lag of 12, i.e. betw
 - [data](#figure-3-data)
 ![ ](figures/percent_change_appli_permits.png  "pct_change_application_and_permits_yearly")
 
-New York City issued 197,556, 195,817 and 192,399 permits each year from 2017 to 2019, including the regular / old-system DoB permits as well as those issued by DoB NOW.
+New York City issued 197,556, 195,817 and 192,399 permits each year from 2017 to 2019, including the regular / old-system DoB permits as well as those issued by DOB NOW.
 
 To break it down by system (over the same, three-year period):
 
@@ -218,7 +218,7 @@ permits were issued through the old system, while:
 - 26,440
 - 40,187
 
-went through DoB NOW. The DoB has been pushing its DoB NOW system as the desired standard and the system has been accounting for an increasing proportion of permit issuances each year.
+went through DOB NOW. The DoB has been pushing its DOB NOW system as the desired standard and the system has been accounting for an increasing proportion of permit issuances each year.
 
 Applications and permits tracked each other well over the time period study - the vast majority of applications are approved. In 2017, there are 94% more permits issued, as compared to the year 2000. The climb in permit issuance since the recession shows that the real estate market has been recovering well, but also that it may be cooling off since hitting its all-time high in 2017
 
