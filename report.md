@@ -177,15 +177,15 @@ This dataset provides information on the DoB's own violations, which generally c
 [^](#table-of-contents)
 ## High-Level Trends
 
-For one, as many in real estate already know, there's a cyclical nature to construction activity in the city. This is common in high-capEx industries such as construction or oil extraction where getting to a revenue-producing product requires heavy upfront spending, leaving market partipants sensitive to long-term signals, due to their heavy exposure and lack of agility. These signals, however, may be both imperfect and followed by many a market participant. Crowding can lead to supply guts (price dips), pullbacks (price increases), and eventual reivestment (in pursuit of the higher prices). We saw large increases in permit applications and issuances in the years immediately preceding the Great Recession (mid-aughts), and we saw another large run up from 2009 to around 2016 or 2017.
-
 #### Figure 1
 - [data](#figure-1-data)
 ![ ](figures/percent_change_all.png  "percent_change_all")
 
+As many in real estate already know, there's a cyclical nature to construction activity. This is common in high-capEx industries such as construction and oil extraction where getting to a revenue-producing product requires heavy upfront spending. This leaves market partipants sensitive to long-term signals, due to a heavy exposure and lack of agility. These signals, however, may be both imperfect and followed by many a market participant. Crowding can lead to supply guts (price dips), pullbacks (price increases), and eventual reivestment (in pursuit of the higher prices). We saw large increases in permit applications and issuances in the years immediately preceding the Great Recession (mid-aughts), and we saw another large run up from 2009 to around 2016 or 2017.
+
 We also saw that, on the aggregate, complaints and violations track each other pretty well. However, we saw that these two (complaints and violations) seem to lag behind permit applications and issuances by about two years. We look to be in the midst of a plataeuing, or maybe even the beginnings of a downswing, in permitting activity. It's worth mentioning that there are more permits than applications each year since a single application might cover more than one type of work at a given job, with each type potentially receiving its own permit from the DoB.
 
-As has already been noted the DoB has implemented a new system for applications and permitting known as [_DoB NOW_](https://www1.nyc.gov/site/buildings/industry/dob-now.page). This is the Department of Building's self-service online tool that enables applicants to do all business with the DoB online. We included the DoB NOW permits issuance here starting from 2017 (the number of permits issued through DoB NOW in 2016 was negligible).
+As has already been noted the DoB has implemented a new system for applications and permitting known as [DoB NOW](https://www1.nyc.gov/site/buildings/industry/dob-now.page). This is the Department of Building's self-service online tool that enables applicants to do all business with the DoB online. We included the DoB NOW permits starting from 2017 (the number of permits issued through DoB NOW in 2016 was negligible).
 
 However, as has already been mentioned, we were limited in how we could make use of the DoB NOW applications data, due to there (at the time of this writing) not being a date column in that data set. As such, we estimated total annual applications from 2017 to 2019 based on applying the applications-to-permits ratio in 2016 to the number of permits issued in each of these subequent years. This method was chosen for the sake of simplicity. The estimated numbers are showed with a dotted line.
 
@@ -204,7 +204,9 @@ The permits data exhibited very strong autocorrelation at a lag of 12, i.e. betw
 - [data](#figure-3-data)
 ![ ](figures/percent_change_appli_permits.png  "pct_change_application_and_permits_yearly")
 
-New York City issued 197,556, 195,817 and 192,399 permits each year from 2017 to 2019, including the regular / old-system DoB permits as well as those issued by DoB NOW. To break it down by system (over the same, three-year period):
+New York City issued 197,556, 195,817 and 192,399 permits each year from 2017 to 2019, including the regular / old-system DoB permits as well as those issued by DoB NOW.
+
+To break it down by system (over the same, three-year period):
 
 - 195,343
 - 169,377
@@ -216,19 +218,19 @@ permits were issued through the old system, while:
 - 26,440
 - 40,187
 
-went through DoB NOW. The DoB has been pushing its DoB NOW system as the desired standard and the system has been accounting for an increasing portion of permit issuances each year.
+went through DoB NOW. The DoB has been pushing its DoB NOW system as the desired standard and the system has been accounting for an increasing proportion of permit issuances each year.
 
-Applications and permits tracked each other well over the time period study - the vast majority of applications are approved. In 2017, there are 94% more permits issued, as compared to the year 2000. The climb in permit issuance since the recession shows that the real estate market has been recovering well, but that it may be cooling off, having hit its all-time high in 2017
+Applications and permits tracked each other well over the time period study - the vast majority of applications are approved. In 2017, there are 94% more permits issued, as compared to the year 2000. The climb in permit issuance since the recession shows that the real estate market has been recovering well, but also that it may be cooling off since hitting its all-time high in 2017
 
 #### Figure 4
 - [data](#figure-4-data)
 ![ ](figures/permit_types.png  "permit_types")
 
-We can see here the tremendous growth in "Construction Equipment" permits issued, although it would be nice to know more about what this means - do these types of permits tie more closely to new-building construction?
+We can see here the tremendous growth in `Construction Equipment` permits issued, although it would be nice to know more about what this means - do these types of permits tie more closely to new-building construction?
 
-It's important to note that, to thoroughly consider whether the city has _over-indexed_ on construction, it would be worth exploring applications and permits against additional variables. For instance, what is the relationship between permitting rates and population density, in different parts of the city? Manhattan is geographically constrained by water on all four sides. So, outside of maybe the Hudson Yards project, where a not-so-inhabited nook of the city was developed freshly in new ways, construction will be felt much more heavily in most parts of Manhattan than, say, in deep Brooklyn.
+It's important to note that, to thoroughly consider whether the city has _over-indexed_ on construction, one should explore applications and permits in the context of additional variables. For instance, what is the relationship between permitting rates and population density, in different parts of the city? Manhattan is geographically constrained by water on all four sides. So, outside of maybe the Hudson Yards project, where a not-so-inhabited nook of the city was developed freshly in new ways, construction will be felt much more heavily in Manhattan than, say, in deep Brooklyn.
 
-One of the great catch-22's of modern life in NYC can be found in the interplay between cost of living and construction-related, quality-of-life issues: we want reasonable rent, but we hate the effects of the construction that helps increase supply to a point where prices might fall.
+One of the great catch-22's of modern life in NYC can be found in the interplay between cost of living and construction-related, quality-of-life issues: we want reasonable rent, but we hate the effects of the construction that helps increase housing supply to the point where prices may fall.
 
 [^](#table-of-contents)
 ## Complaints and Violations
@@ -237,24 +239,32 @@ One of the great catch-22's of modern life in NYC can be found in the interplay 
 - [data](#figure-5-data)
 ![ ](figures/ratios.png  "ratios")
 
-Complaints-to-permits and violations-to-permits both evaluate the percentage of permits issued that lead to complaints and violations. Complaints-to-permits reached 74% at the end of 2019. This is horrific for resident in NYC since 7 out of 10 jobs has been filed for complaints. 
+The above ratios help to put the number of annual complaints and violations in context - i.e. let's scale each measure down by permit issuance, our proxy for construction activity.
+
+Complaints-to-permits reached 74% at the end of 2019, meaning that, for every 100 permits issued in 2019 there were 74 complaints made. To put this figure in context, this ratio sat at 43% in 2000, 95% in 2008, and 56% in 2015. One takeaway might be that real estate booms coincide with some combination of bad behavior, frustrated residents. That said, maybe the the 2008 peak had something to do with a more streamlined complaint-filing process - more work could be done to flesh this out. It's alo worth highlighting the growth this measure has exhibited over the last few years - it's almost 50% higher than it was 4 years ago.
+
+Violations-to-complaints came in at 48% last year. This measure was at 40% in 2000, 58% in 2009 (record high), and 28% in 2015. Again, opportunities for confounding abound - but the growth since 2015 is real.
+
 
 #### Figure 6
 - [data](#figure-6-data)
 ![ ](figures/complaint_types.png  "complaint_types")
 
-We grouped the complaints by their types by issuance year. The complete complaints types can be found [here](https://www1.nyc.gov/assets/buildings/pdf/complaint_category.pdf). The city modified the type `63` _Elevator-Danger Condition/Shaft Open/Unguarded_ to `6S` in recent years. `6S` counts for critical elevator issues, e.g. a particular elevator is out of order. `6M` on the contrary, is similar to `6S` but less severe. 
+In this case, we filtered the data to 2006 - 2019 so that we could stick to plotting just 3 complaint types.
 
-The top 3 complaints have been `45`: illegal conversion, `05`: no permit, and `63`: elevator in danger condition since 2006. These 3 types of complaints stay on a similar pattern with a little fluctuation in recent years.
+The top complaint type, `Illegal Conversion`, is [defined](https://www1.nyc.gov/site/buildings/renter/illegal-conversions-vacates.page) by the city as "an alteration or modification of an existing building to create an additional housing unit without first obtaining approval from the New York City Department of Buildings," which have declined a bit over the past few years.
+
+Working without a permit came in second (and once, first) over the period studied. What type of work this corresponded to, we don't know, but it makes a person wonder what kinds of maintenance and construction activities are going on outside the purview of the authorities.
+
+The number 3, and maybe least-assuring complaint type on the list, is that of `Elevator`. What we've plotted here is actually the result of rolling two, different complaint types up to a single label. These complaint types existed at different times, with the previous elevator category, `Elevator-Danger Condition/Shaft Open/Unguarded` in recent years being substituted out in favor of two new categories, with one being more sever than the other. What you see here is the old category through 2017, and the new, more-severe category for 2018 - 2019. See the chart's corresponding data for more information.
+
+The official, somewhat-complete complaint-type-code mappings can be seen [here](https://www1.nyc.gov/assets/buildings/pdf/complaint_category.pdf).
 
 #### Figure 7
 - [data](#figure-7-data)
 ![ ](figures/violation_types.png  "ecb_violation_types")
 
-In figure 6 we measure the number of ECB violations for each type and year. We show the top 3 ECB violations for each year from 2006 to 2019. Construction violations has been the the most prevailing since 2006. It increased from around 25,000 to 70,000 in 7 years from 2012 to 2019 and reached its all time high in 2019 at 71,532.
-
-ECB violation types include construction, elevators, quality of life, boilers, local law, site safety, zoning, signs, plumbing, public assembly, HPD, cranes and derricks, administrative, padlock, non-hazardous. 
-
+We can see here that `Construction` violations have absolutely skyrocketed since 2013, increasing from just-under 25k in that year to more than 70k in 2019. That doesn't mean there's no ambiguity - might the `Construction` category simply be absorbing some of what was previously considered `Unknown`? It's hard to know. But, regardless, the increase in `Construction` violations stands on its own, which offers some support for the "yes, construction has been getting more harmful" argument.
 
 [^](#table-of-contents)
 ## Violation Penalties
@@ -263,45 +273,54 @@ ECB violation types include construction, elevators, quality of life, boilers, l
 - [data](#figure-8-data)
 ![ ](figures/penalty_imposed_y_hearing_issue.png  "penalty_imposed")
 
-In statistics, mean and median are two main measures of central tendency. They could help us better understand the distribution of data. Since mean measures the average of a set of data, its value will be more affected by outliers than median. 
+To better understand the underlying penalty data, we grouped the data by the years corresponding to two different date fields (hearing date and issue date) and calculated both the mean and median for each year. Note that _issue date_ is the date on which a violation is issued, and _hearing date_ is the date of the most recent, scheduled ECB hearing. A hearing presents an opportunity for the respondent named on a violation to either admit to or contest it.
 
-To better understand the underlying penalty data, we grouped the data by two date fields (hearing date and issue date) by year and to calculate mean and median for each year. Note that _issue date_ is the date on which a violation is issued, and _hearing date_ is the date of the most recent scheduled hearing. A hearing presents an opportunity for the respondent named on the violation to either admit to it or contest it. 
+In statistics, the mean and median are two main measures for the [central tendency](https://en.wikipedia.org/wiki/Central_tendency) of a dataset - i.e. where do the values of an at-least-somewhat random variable tend to fall? Or, more colloquially: if you had to _expect_ one value from a dataset, what would it be? Expectation referes to a data's mean, but the mean can be unduly influenced by outliers, which the median is much more robust two. Thus, the measures are related but different, and their comparison can prove valuable.
 
-A hearing occurs after the issuance of a ECB violation. The mean grouped by issue date tracks pretty well with the mean grouped by issue date with a few months lag. The medians are pretty comparable in their moves. While the medians of imposed penalties stayed within a roughly $500-750 range from 2008 to 2018, the means increased greatly, eventually settling within a range of $1,500-3,500. This positive difference between mean and median indicates that the data is positively skewed, i.e. the data has a long right tail. Surprisingly, at the end of 2018 to 2019, both means and medians of imposed penalties sharply increased, indicating that the city issued many expensive ECB violations. 
+A positive (negative) difference between mean and median would indicate that the data is positively (negatively) [skewed](https://en.wikipedia.org/wiki/Skewness) - i.e. there are is a long / dispered "tail" stretching right-ward (left-ward) away from the probabilistic center of the data. In other words, skew indicates asymmetry - when the data falls away from its center, it tends to fall farther in one direction than in the other. The large, positive difference we can see between mean in median in this chart indicates that a relatively small number of high-valued penalties are "pulling" the mean away from the center of the data. Thus, the expectation for an imposed penalty is much higher than the actual midpoint of all imposed penalties.
+
+Surprisingly, at the end of 2018 to 2019, both the mean and median measures (in the case of the median, only by issue date) sharply increased, indicating that the city issued many expensive DoB ECB violations.
 
 #### Figure 9
 - [data](#figure-9-data)
 ![ ](figures/penalty_paid_y_hearing_issue.png  "penalty_paid")
 
-The means and medians of paid penalties followed a similar pattern as the imposed penalties, with the exception of 2018 and 2019. The means of paid penalties has tumbled since the end of 2018, which when compared to the above data on imposed penalties indicates that many ECB penalties issued in the last two years have not been paid. 
+In this chart, we look at what's actually been paid by respondents, as opposed to what's been imposed by the city. Some of the trends that can be seen in the above, _imposed_ chart hold true here, too. But, the mean median measures of paid penalties have tumbled since the end of 2018, which when compared to the above data on imposed penalties indicates that many ECB penalties issued in the last two years have not been paid.
 
+To some extent, this makes sense - there may very well be some kind of a natural gap between when penalties are paid and when they're imposed. But, when the median paid penalty spends multiple years at zero - meaning that the paid amount for at least half of all penalties imposed or heard (this trend was similar for both date fields) was _zero_ dollars - during periods of time when the median imposed penalty was more than $500, and when the mean imposed penalty was more than $1000, that seems suspect.
 
 #### Figure 10
 - [data](#figure-10-data)
 ![ ](figures/penalty_paid_to_imposed_yearly.png  "penalty_paid_to_imposed")
 
-The paid-to-imposed ratio measures the proportion of penalties paid by building owners to penalties imposed to them by DoB. The paid-to-imposed ratio went down from approximately 50% to 30% after the recession until 2012. The ratio arose thereafter and reached 47% in 2016. However, the paid-to-imposed ratio has plunged 76% since then and fell to 11.64%. 
+Taking the insights described under Figure 9 further, we can examing the paid-to-imposed ratio, grouped annually by hearing date. This ratio measures the total dollar value of penalties paid by respondents as a proportion of the total dollar value of penalties imposed by the ECB. The paid-to-imposed ratio went from 46% in 2017, to 31% in 2018, to 12% last year. Why the steep drop?
 
-The blue bar shows the amount of ECB violations was issue from 2000 to 2019. Violations issued declined since the recession and rebound to its all time high at 2019. The total number of violations has increased 55% from 59,838 to 92,800 since 2019. The city may just overwhelmed by the surprising climb in the violations and need more support on collecting penalty.
+The blue bar shows the number of DoB-issued ECB violations issued. As we can see, after declining in the years immediately proceeding the recession, the number of violations issued has broken records each of the last 3 years, standing at over 90k for last year.
+
+With that said, 12% does seem quite low, no?
+
+What "good" or "bad" would mean here could surely depend on a lot of things, so let's lay it out over a couple of points. A degregation in this ratio means, unambiguously, that violations are being issued at a rate that is higher than the rate at which penalties are being paid. To gain a sense of the magnitude or severity of the problem, we can consider the rate at which the ratio is degrading to the rate at which the number of issued violations is growing. With that, paid-to-imposed fell by 48% between 2017 and 2018, and the number of issued violations grew by 12% over the same period - those are very different change rates! Thus it might suffice to say that the city's resources, when it comes to collecting on the penalties it's imposed, are stretched pretty thin.
 
 #### Figure 11
 
 - [data](#figure-11-data)
 ![ ](figures/normalized_and_paid_to_imposed_hearing.png  "normalized_and_paid_to_imposed")
 
-To further analyze paid to imposed ratio, we grouped the ECB violations by its hearing status by hearing year. Normalized penalty imposed represents the proportion of penalty imposed for each type of hearing status for each year. We mainly looked at two types of hearings, default and in violation, because they count for the top two highest amount of imposed penalty. 
+To further analyze paid-to-imposed ratios, we grouped the DoB-issued ECB violations by hearing status and hearing year. Normalized penalty imposed represents the proportion of total annual penalty imposed that each type of hearing status accounted for. We looked in detail at two hearing stati, `DEFAULT` and `IN VIOLATION`, because these stati together accounted for almost the of the total dollar value of imposed penalties last year.
 
 *Violation Status:* `DEFAULT`
 
 A hearing status of `DEFAULT` indicates that the respondent failed to appear for scheduled hearing and did not pay the summons prior to the hearing. ECB may add additional penalties on top the existing one(s).
 
-We can see that violations with a status of `DEFAULT` have each year, since 2012, accounted for about *50-60% of the total dollar-value* of all DoB-issued ECB violations, while the paid-to-imposed ratio over this period of time has typically stayed *below 20%*. Moreover, given that it usually takes less than a year for the city to hold an ECB hearing for a given violation, the 2018 paid-to-imposed ratio of .073 for `DEFAULT` violations (which accounted for 52% of the total dollar-value of Dob-issued ECB violations that year) is just outrageous.
+We can see that violations with a status of `DEFAULT` have each year, since 2012, accounted for about 50-60% of the total dollar-value of all DoB-issued ECB violations, while the paid-to-imposed ratio over this period of time has typically stayed below 20%. Moreover, (as seen in the text accompanying [the next figure](#figure-12)) given that it usually takes less than a year for the city to hold an ECB hearing for a given violation, the 2018 paid-to-imposed ratio of 7% for `DEFAULT` violations (which accounted for 52% of the total dollar-value of DoB-issued ECB violations that year) seems outrageous - that's a lot of money that should be going to the city.
 
-Stronger default penalties could make a real impact on the timeliness with which these violations are paid off. And, with such a high % of penalty dollar-value in default each year, is there any way that the city is tracking all of these down? With that, an impact of payment timeliness probably means a real impact both to the city's bottom line, and to the behavior of the various players in its ecosystem.
+Without severe violations in place for defaulting on penalty payment, these penalties could easily come to be seen as simply a cost of doing business, payable whenever it is convenient to do so - who's to say that this isn't already the case? Stronger default penalties could make a real impact on the timeliness with which these violations are paid off.
+
+Additionally, with such a high % of penalty dollar-value in default each year, is there any way that the city is tracking all of these down? An overburdened system presents opportunities for bad actors to slip through the cracks. With that, making an impact on payment timeliness probably means making an impact both to the city's bottom line, and to the behavior of the various players in its ecosystem.
 
 *Violation Status:* `IN VIOLATION`
 
-ECB violations with hearing status `IN VIOLATION` in the last decade typically accounted for around around 40% of the total dollar-value of all DoB ECB penalties imposed each year. The paid-to-imposed ratio for penalties peaked at 76% in 2016 and has since fallen - to 75% in 2017, 67% in 2018, and 48% last year. One reason for this decline could be the massive increase in ECB Violations issued over the last few years. 
+DoB-issued ECB violations with hearing status `IN VIOLATION` in the last decade typically accounted for around around 40% of the total dollar value of all DoB ECB penalties imposed each year. The paid-to-imposed ratio for these penalties peaked at 76% in 2016 and has since fallen - to 75% in 2017, 67% in 2018, and 48% last year. One reason for this decline could be the massive increase in DoB ECB Violations issued over the last few years. 
 
 *Violation Status: All*
 There are nine types of hearing status as following: 
@@ -320,7 +339,9 @@ There are nine types of hearing status as following:
 - [data](#figure-12-data)
 ![ ](figures/ecb_hearing_imposed_daysdelta.png  "hearing_issue_days_delta")
 
-All ECB violations need to be adjudicated by the Office of Administrative Trials and Hearings (OATH), so we analyzed the day differences between hearing and issue dates across all issued ECB violations, broken out by year. The above chart shows us the average number of days that it took for OATH/ECB to hold a hearing (days delta between hearing and issue date) from 2000 to 2019 (issue date year). The blue bar represents the average days and the black line is the standard deviation of the days delta in each year. A higher error bar indicates more volatility in days delta for the year. The average of days decreased from 206 days in 2008 to 97 days in 2013. There has been a slightly increase since then. However, the standard deviation has been decreasing since the recession, which means that OATH/ECB is getting more and more consistent on its violations hearing. 
+All ECB violations need to be adjudicated by the Office of Administrative Trials and Hearings (OATH), so we analyzed the day-differences between hearing and issue dates across all DoB-issued ECB violations, broken out by year. The above chart shows us the average number of days that it took for OATH/ECB to hold a hearing (i.e. the delta, in days, between hearing and issue dates) from 2000 to 2019 (issue date year). The blue bars represent the average days-delta for each year and the black lines represent the standard deviation around those averages. A higher error bar indicates more volatility in the days-delta for that year.
+
+While the average days-delta fell to 97 in 2013, it has since climbed to to 127, an increase of around 30%. It's worth noting that the standard deviation has decreased noticeably over the same number of years. So, OATH/ECB is getting more consistent in its violation-hearing scheduling, but the typical time-to-schedule has increased a bit. 
 
 #### Figure 13
 
@@ -338,21 +359,30 @@ All ECB violations need to be adjudicated by the Office of Administrative Trials
 |99.90	       |811          |  576
 |99.99	       |965          |	656
 
-We further analyze on percentile of days delta between hearing days and issue days for 2017 and 2018. We specifically look at 95% percentile as representation that most of ECB violations have been heard in the year. In 2017, 95% of issued ECB violations in have no more than 310 days delta between hearing date and issue date. The 95% percentile of days delta stays similar in 2018. Penalty is imposed after the hearing. 
+We further analyze the days-delta values described [above](#figure-12) through looking at some different [percentiles](https://en.wikipedia.org/wiki/Percentile) for this measure, in both 2017 and 2018. The value for a given percentile represents the value below with a given percent of the data lies. For instance, the median is (at least within this context) the 50th percentile.
 
-In an effort to provide a greater buffer window, we decide to bucket by year given 95% days delta between issued date and hearing date. We further adding two months to the 95% days delta to allow the City to collect penalties since we have no payment date of penalty in the ECB violations data to have a better understanding on the speed of collecting. Therefore, we give approximately a year to collect the penalty after the violation was issued.
+We highlight the 95th percentile to substantiate the claim that most violations have been heard within a year. In 2017, 95% of DoB-issued ECB violations saw hearings within 310 days of issuance. The 95% percentile of days-delta was in 2018. Penalty is imposed at hearing and is, as far as we know, due pretty much immediately, unless some other agreement has been made. Thus, a full year (or 365 days) seems a good window over which to judge penalty collection, which adds strength to our paid-penalty analyses accompanying Figures 9 and 10.
 
 #### Figure 14
 - [data](#figure-14-data)
 ![ ](figures/active_resolved_ecb.png  "active_and_resolved_ecbs")
 
-Active ECB violations are violations that still needs to be addressed whereas resolved ECB violations are the ones that was either fixed with DOB or dismissed by OATH. The above graph shows the status of ECB violations that have been heard as of 2019 (grouping by hearing date). There are still many active ECB violations in this decade. We can tell that the DoB is truly overwhelmed by the increase in number of violations issued.
+Active ECB violations are violations that still need to be addressed, whereas resolved ECB violations have either been cured, paid, or dismissed. The above graph shows the breakdown of ECB violations, by status that have been heard as of 2019 (we are grouping by hearing date). Active-to-total has held at at least 20% since 2001, and hit 30% in 2018, highlighting that the city has been kept busy with all the recently issued violations.
 
 #### Figure 15
 - [data](#figure-15-data)
 ![ ](figures/paid_to_imposed_bins.png  "paid_to_imposed_bins")
 
-We further grouped the paid-to-imposed ratio into 6 bins of imposed penalty's dollar value. They are 0-500, 500-1,000, 1,000-5,000, 5,000-10,000, 10,000-50,000, 50,000-100,000. From 2016 to 2019, DoB paid-to-imposed ratio went down as the dollar imposed penalty increased. DoB reached 80% on paid-to-imposed ratio when penalties were within 1,000 dollars. However, the ratio went below 20% for penalties higher than 10,000 dollars. We can conclude that DoB has trouble on collecting higher imposed penalties. 
+We were interested in assessing whether, as it did when broken out by violation status, paid-to-imposed showed some variability across penalty size (in dollars). So, we calulated the paid-to-imposed ratio across 6 different imposed-penalty bins. These were (in dollars):
+
+- 0-500
+- 500-1,000
+- 1,000-5,000
+- 5,000-10,000
+- 10,000-50,000
+- 50,000-100,000
+
+and we looked at this data over the past 4 years. From 2016 to 2019, paid-to-imposed ratios decreased as the imposed-penalty bin boundaries went higher. Paid-to-imposed ratios - even in 2018 - were close to 80% for the two lowest bins. However, these ratios plummeted in the higher bins, falling to 20% and below - even in 2019 - for the two highest bins. Thus, it would appear that the city has trouble collecting on its steeper penalties.
 
 #### Figure 16
  
@@ -395,16 +425,29 @@ We further grouped the paid-to-imposed ratio into 6 bins of imposed penalty's do
 |                    |2018            |0.02                 |    0.00            |0.64
 |                    |2019            |0.01                 |    0.00            |0.33
 
-This table shows percentage of ECB Violation counts, percentage of imposed penalty, percentage of paid penalty, and paid-to-imposed penalty for year 2017, 2018 and 2019 for each type of ECB violations. For example in 2017 for construction type, 74% of ECB violation issued in that year contributed to construction and 77% of dollar amount of penalty imposed was towards to construction. However, the paid to imposed ratio for construction in 2017 is only 0.43, which means 57% of penalty imposed for construction in 2017 has not been paid with in 2017. It is also interesting to see the normalized penalty imposed increase in dollars from 7% in 2018 to 16% in 2019, but the normalized violation counts only increased 1%. Furthermore, the paid to imposed ratio was only 0.14 and 0.01 in 2018 and 2019. The city should definitely to investigate on these two types of ECB violations to improve their collection of penalty. 
+This table shows the percentages of DoB ECB violations:
 
+- issued (counts)
+- imposed (dollars)
+- paid (dollars)
+
+as well as the paid-to-imposed ratios, all broken out by year and by violation type, for 2017 - 2019.
+
+We can see that `Construction` violations account for the lionshare of both the number of issued penalties and the total dollar-value of imposed penalties. Additionally, we can see that `Construction` violations show a pretty poor paid-to-imposed ratio, which when paired with the outsized contributions to `Normalized Violation Counts` leads to a large percentage of violations not being paid. It would seem, then, that `Construction` violations are driving much of the recent declines in overall paid-to-imposed ratio, which supports the idea that developers treat these violations as simply a cost of doing business.
+
+For instance, with a paid-to-imposed ratio of just .3 in 2018 but a .77 contribution to all penalty dollars imposed, `Construction` penalties in 2018 single-handedly accounted for 54% of all violations issued that year not being paid within that year.
+
+`Quality of Life` violations took an even more drastic tumble, with regard to paid-to-imposed ratio. These account for only a small percent of the total dollar-value of imposed penalties, although this number grew noticeably between 2018 and 2019.
 
 #### Figure 17
 - [data](#figure-17-data)
 ![ ](figures/violation_spikes.png  "dob_violation_counts")
 
-We grouped DoB violations by issued year and month from 2000 to 2019 to understand the trend in violation issuance over years. DoB Violation is a notice without penalty, which is very different from ECB violation. The periodic spikes for each year are most likely the computer generated violations from time to time.  We were unable to come to a conclusion on whether a default on a DoB-issued ECB violation would yield a DoB violation. If this is this the case, the jagged temporality of this data could be aggravating efforts to enforce payment on DoB-issued ECB violations.
+We grouped (non-ECB) DoB violations by issued year and monthfrom 2000 to 2019 to allow us to understand the trend in the issuance of these violations over the years.
 
---
+As has already been mentioned, the periodic spikes probably coincide to auto-generated violations that are issued from time to time. That doesn't mean this chart didn't look surprising to us! Something like yearly autocorrelation (as we saw [above](#figure-2)) was to be expected - but clusters around the same calendar month each year, that was surprising.
+
+We were unable to come to a conclusion on whether a default on a DoB-issued ECB violation yields a DoB violation - this is an important question that we're hoping someone can answer for us. If that is the case, the jagged temporality of this data could be aggravating efforts to enforce payment on DoB-issued ECB violations, as perpetrators might be either confused about the consequences for penalty default, or aware of the fact that further penalties may be more tied to the calendar month than the date of default, which seems odd.
 
 [^](#table-of-contents)
 ## Recommendations
@@ -427,7 +470,7 @@ Finally, the City need to ensure that violation penalties do not stay stagnant i
 [^](#table-of-contents)
 ## Next Steps
 
-We have reiterated that we are painting in broad strokes. Construction activity varies from neighborhood to neighborhood, and further analysis at the borough and neighborhood levels would be very interesting to see. It would also be helpful to see measures of population density compared to construction activity, as the various "effects" of construction activity are surely felt differently, depending on how dense the surrounding area is. 
+We can reiterate, once again, that we have painted in broad strokes. Construction activity varies from neighborhood to neighborhood, and further analysis at the borough and neighborhood levels would be very interesting to see. It would also be helpful to see measures of population density compared to construction activity, as the various "effects" of construction activity are surely felt differently, depending on how dense the surrounding area is. 
 
 Additionally, analysis on the relationships between economic factors (e.g. [REIT valuations](https://www.reit.com/what-reit?gclid=Cj0KCQiAqNPyBRCjARIsAKA-WFzmxqJWaTebuH8MXvH0l2T5_Qkix2Fus-tDbNk8rRArIU8SujMA8x4aAj7TEALw_wcB), [residential rental prices](https://streeteasy.com/blog/data-dashboard/?agg=Median&metric=Asking%20Rent&type=Rentals&bedrooms=Any%20Bedrooms&property=Any%20Property%20Type&minDate=2010-01-01&maxDate=2020-01-01&area=Flatiron,Brooklyn%20Heights), [residential sales prices](https://streeteasy.com/blog/data-dashboard/?agg=Median&metric=Asking%20Price&type=Sales&bedrooms=Any%20Bedrooms&property=Any%20Property%20Type&minDate=2010-01-01&maxDate=2020-01-01&area=Flatiron,Brooklyn%20Heights)) and the data we've analyzed here would be interesting to see. For instance, a capEx-heavy industry such as real estate will surely exhibit cyclical tendencies - we did in fact see this in the DoB data[<sup>\*</sup>](#figure-2). Comparing these tendencies to pricing trends, an understanding of which could benefit developers' sense of market timing, was something that we'd hoped to do, but didn't have time for. And, regarding ECB violations - it would be interesting to flesh out whether there is, or whether there should be, any relationship between the real estate market's economic health and the city's penalty imposition or collection.
 
@@ -439,7 +482,7 @@ As such, we had envisioned trying to link violations to their perpetrating landl
 - which permit applicants can be traced to the most violations?
 - how do the answers to each of the above questions change over time?
 
-Answering such questions would better arm the city to weed out problematic actors from its buildings ecosystem.
+Answers to such questions would better arm the city to weed out problematic actors from its buildings ecosystem.
 
 [^](#table-of-contents)
 ## Appendix
@@ -802,8 +845,8 @@ Answering such questions would better arm the city to weed out problematic actor
 - [back to figure](#figure-14)
 
 
-|Year| Active |Resolved|Active to Total|	
-|:--:|:------:|:------:|:-------------:|
+|Year| Active |Resolved|Active to Total (%)|	
+|:--:|:------:|:------:|:-------------:    |
 |2000|3.228   |22.966  |12.32343284721690
 |2001|4.864   |36.838  |11.663709174619900
 |2002|4.985   |34.199  |12.722029399755000
@@ -965,8 +1008,5 @@ Answering such questions would better arm the city to weed out problematic actor
 | 2009-10            |  2.996        | 2019-10            |  6.355        |
 | 2009-11            |  2.525        | 2019-11            |  21.825       |
 | 2009-12            |  29.633       | 2019-12            |  3.924        |
-
-
-
 
 </font>
