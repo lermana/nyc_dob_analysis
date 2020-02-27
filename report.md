@@ -266,7 +266,7 @@ The official, somewhat-complete complaint-type-code mappings can be seen [here](
 - [data](#figure-7-data)
 ![ ](figures/violation_types.png  "ecb_violation_types")
 
-We can see here that `Construction` violations have absolutely skyrocketed since 2013, increasing from just-under 25k in that year to more than 70k in 2019. That doesn't mean there's no ambiguity - might the `Construction` category simply be absorbing some of what was previously considered `Unknown`? It's hard to know. But, regardless, the increase in `Construction` violations stands on its own, which offers some support for the "yes, construction has been getting more harmful" argument.
+We can see here that `Construction` violations have absolutely skyrocketed since 2013, increasing from just-under 25k in that year to more than 70k in 2019. That doesn't mean there's no ambiguity - might the `Construction` category simply be absorbing some of what was previously considered `Unknown`? Or is the `Unknown` absorbing `Quality of Life`? It's hard to know. But, regardless, the increase in `Construction` violations stands on its own, which offers some support for the "yes, construction has been getting more harmful" argument.
 
 [^](#table-of-contents)
 ## Violation Penalties
@@ -295,13 +295,13 @@ To some extent, this makes sense - there may very well be some kind of a natural
 - [data](#figure-10-data)
 ![ ](figures/penalty_paid_to_imposed_yearly.png  "penalty_paid_to_imposed")
 
-Taking the insights described under Figure 9 further, we can examing the paid-to-imposed ratio, grouped annually by hearing date. This ratio measures the total dollar value of penalties paid by respondents as a proportion of the total dollar value of penalties imposed by the ECB. The paid-to-imposed ratio went from 46% in 2017, to 31% in 2018, to 12% last year. Why the steep drop?
+Taking the insights described under Figure 9 further, we can exam the paid-to-imposed ratio, grouped annually by hearing date. This ratio measures the total dollar value of penalties paid by respondents as a proportion of the total dollar value of penalties imposed by the ECB. The paid-to-imposed ratio went from 48% in 2017, to 37% in 2018, to 23% last year. Why the steep drop?
 
 The blue bar shows the number of DoB-issued ECB violations issued. As we can see, after declining in the years immediately proceeding the recession, the number of violations issued has broken records each of the last 3 years, standing at over 90k for last year.
 
-With that said, 12% does seem quite low, no?
+With that said, 23% does seem quite low, no?
 
-What "good" or "bad" would mean here could surely depend on a lot of things, so let's lay it out over a couple of points. A degradation in this ratio means, unambiguously, that violations are being issued at a rate that is higher than the rate at which penalties are being paid. To gain a sense of the magnitude or severity of the problem, we can consider the rate at which the ratio is degrading to the rate at which the number of issued violations is growing. With that, paid-to-imposed fell by 48% between 2017 and 2018, and the number of issued violations grew by 12% over the same period - those are very different change rates! Thus it might suffice to say that the city's resources, when it comes to collecting on the penalties it's imposed, are stretched pretty thin.
+What "good" or "bad" would mean here could surely depend on a lot of things, so let's lay it out over a couple of points. A degradation in this ratio means, unambiguously, that violations are being issued at a rate that is higher than the rate at which penalties are being paid. To gain a sense of the magnitude or severity of the problem, we can consider the rate at which the ratio is degrading to the rate at which the number of issued violations is growing. With that, paid-to-imposed fell by 22.12% between 2017 and 2018, and the number of issued violations grew by 12% over the same period - those are very different change rates! Thus it might suffice to say that the city's resources, when it comes to collecting on the penalties it's imposed, are stretched pretty thin.
 
 #### Figure 11
 
@@ -375,7 +375,7 @@ Thus, a full year (or 365 days) seems a good window over which to judge penalty 
 - [data](#figure-14-data)
 ![ ](figures/active_resolved_ecb.png  "active_and_resolved_ecbs")
 
-Active ECB violations are violations that still need to be addressed, whereas resolved ECB violations have either been cured, paid, or dismissed. The above graph shows the breakdown of ECB violations, by status, which have been heard as of 2019 (we are grouping by hearing date).
+Active ECB violations are violations that still need to be addressed, whereas resolved ECB violations have either been cured, paid, or dismissed. The above graph shows the breakdown of ECB violations, by status, which have been heard as of 2019 (we are grouping by hearing date).The dash line represents total amount of active ECB violations to total ECB Violations (active-to-total).
 
 Active-to-total has held at at least 20% since 2001, and hit 30% in 2018, highlighting that the city has been kept busy with all the recently issued violations.
 
@@ -467,6 +467,7 @@ This last clause, that "further penalties may be more tied to the calendar month
 - [data](#figure-18-data)
 ![ ](figures/total_exp_imposed_paid.png  "total_dob_expense_imposed_paid_penalty")
 
+We calculated the total amount of imposed penalty and paid penalty for each year (by year of the hearing date) and then compared these numbers with the [total expense of DoB](https://data.cityofnewyork.us/City-Government/Expense-Actuals/7yay-m4ae). The DoB's expense data is only available for us from 2002 to 2017. It is surprising to see that penalty imposed amount exceeded the total expense of DoB from 2009 to 2015, especially in 2010 at 183M and 2011 at 177M. Given than the average days-delta between issue and hearing was around 200 days in 2009, most of the penalty imposed in 2010 were cases issued in 2009 or even earlier. Total DoB expense has increased since 2014 and total penalty started to drop two years later in 2016. However, the paid to imposed ratio since 2016 started to drop sharply, which is not a good sign on penalty collection. The City really need to improve its penalty collection process so that they could spend more money on law enforcement to end this infinite loop. 
 
 [^](#table-of-contents)
 ## Recommendations
