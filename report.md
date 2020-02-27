@@ -463,6 +463,11 @@ We were unable to come to a conclusion on whether a default on a DoB-issued ECB 
 
 This last clause, that "further penalties may be more tied to the calendar month than the date of default," would (if true) indicate some room for improvement in this default-penalization process. 
 
+#### Figure 18
+- [data](#figure-18-data)
+![ ](figures/total_exp_imposed_paid.png  "total_dob_expense_imposed_paid_penalty")
+
+
 [^](#table-of-contents)
 ## Recommendations
 
@@ -898,7 +903,7 @@ Answers to such questions would better arm the city to weed out problematic acto
 
 #### Figure 17 Data
 - *DoB Violation Issuances, Monthly*
-- [back to figure](#figure-16)
+- [back to figure](#figure-17)
 
 | Date (2000 - 2009) | Issuances (k) | Date (2010 - 2019) | Issuances (k) |
 | :----------------- | ------------: | :----------------- | ------------: |
@@ -1023,4 +1028,28 @@ Answers to such questions would better arm the city to weed out problematic acto
 | 2009-11            |  2.525        | 2019-11            |  21.825       |
 | 2009-12            |  29.633       | 2019-12            |  3.924        |
 
+
+#### Figure 18 Data
+- *Total DoB Expense, Penalty Imposed, and Penalty Paid, Yearly*
+- All numbers are in Millions
+- [back to figure](#figure-18)
+
+|Year|Total DoB Expense|Total Penalty Imposed|Total Penalty Paid|
+|:--:|:------:|:---------:|:-------:|
+|2002| 56.378 |29.833850  |17.246261|
+|2003| 57.862 |31.848017  |18.680099|
+|2004| 57.895 |34.560425  |19.321676|
+|2005| 64.273 |40.769893  |22.579586|
+|2006| 81.526 |51.281448  |26.028716|
+|2007| 87.195 |60.095966  |28.832429|
+|2008| 99.410 |78.751320  |36.950962|
+|2009| 109.67 |118.775649 |53.641754|
+|2010| 101.53 |183.044131 |70.859220|
+|2011| 98.974 |176.776785 |62.305087|
+|2012| 95.062 |131.762804 |44.072819|
+|2013| 102.48 |112.377086 |38.949145|
+|2014| 98.679 |117.457328 |44.114595|
+|2015| 108.67 |127.387875 |50.058944|
+|2016| 134.72 |109.562015 |51.420393|
+|2017| 150.35 |120.734118 |57.782061|
 </font>
