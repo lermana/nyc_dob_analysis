@@ -295,7 +295,7 @@ To some extent, this makes sense - there may very well be some kind of a natural
 - [data](#figure-10-data)
 ![ ](figures/penalty_paid_to_imposed_yearly.png  "penalty_paid_to_imposed")
 
-Taking the insights described under Figure 9 further, we can exam the paid-to-imposed ratio, grouped annually by hearing date. This ratio measures the total dollar value of penalties paid by respondents as a proportion of the total dollar value of penalties imposed by the ECB. The paid-to-imposed ratio went from 48% in 2017, to 37% in 2018, to 23% last year. Why the steep drop?
+Taking the insights described under Figure 9 further, we can examine the paid-to-imposed ratio, grouped annually by hearing date. This ratio measures the total dollar value of penalties paid by respondents as a proportion of the total dollar value of penalties imposed by the ECB. The paid-to-imposed ratio went from 48% in 2017, to 37% in 2018, to 23% last year. Why the steep drop?
 
 The blue bar shows the number of DoB-issued ECB violations issued. As we can see, after declining in the years immediately proceeding the recession, the number of violations issued has broken records each of the last 3 years, standing at over 90k for last year.
 
