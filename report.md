@@ -401,48 +401,50 @@ It would appear that the city has trouble collecting on its steeper penalties.
 |ECB Violation Type	 |Year   |Normalized Violation Counts|Normalized Imposed Penalty|Paid to Imposed
 |:------------------:|:-------------: |:------------------: |:----------------:  |:-----------:
 |Boilers             |2017            |0.04                 |    0.02            |0.43
-|                    |2018            |0.03                 |    0.01            |0.41
-|                    |2019            |0.02                 |    0.01            |0.25
-|**Construction**    |**2017**        |**0.74**             |    **0.77**        |**0.43**
-|                    |**2018**        |**0.77**             |    **0.78**        |**0.30**
-|                    |**2019**        |**0.77**             |    **0.68**        |**0.12**
-|Cranes and Derricks |2017            |0.00                 |    0.01            |0.90
-|                    |2018            |0.01                 |    0.01            |0.62
-|                    |2019            |0.00                 |    0.01            |0.17
-|Elevators	         |2017            |0.09                 |    0.04            |0.70
-|                    |2018            |0.07                 |    0.03            |0.44
-|                    |2019            |0.06                 |    0.02            |0.33
-|Local Law	         |2017            |0.00                 |    0.00            |0.68
-|                    |2018            |0.04                 |    0.02            |0.50
-|                    |2019            |0.00                 |    0.00            |0.14
+|                    |2018            |0.03                 |    0.01            |0.43
+|                    |2019            |0.02                 |    0.01            |0.34
+|**Construction**    |**2017**        |**0.74**             |    **0.78**        |**0.45**
+|                    |**2018**        |**0.77**             |    **0.80**        |**0.34**
+|                    |**2019**        |**0.77**             |    **0.76**        |**0.22**
+|Cranes and Derricks |2017            |0.00                 |    0.01            |0.83
+|                    |2018            |0.01                 |    0.01            |0.81
+|                    |2019            |0.00                 |    0.01            |0.41
+|Elevators	         |2017            |0.09                 |    0.04            |0.72
+|                    |2018            |0.07                 |    0.03            |0.49
+|                    |2019            |0.06                 |    0.03            |0.43
+|Local Law	         |2017            |0.00                 |    0.01            |0.66
+|                    |2018            |0.04                 |    0.01            |0.49
+|                    |2019            |0.00                 |    0.01            |0.51
 |Plumbing	         |2017            |0.03                 |    0.02            |0.58
-|                    |2018            |0.01                 |    0.01            |0.40
-|                    |2019            |0.01                 |    0.01            |0.15
-|Public Assembly	 |2017            |0.00                 |    0.00            |0.13
-|                    |2018            |0.00                 |    0.00            |0.41
-|                    |2019            |0.00                 |    0.00            |0.00
-|**Quality of Life** |**2017**        |**0.01**             |    **0.03**        |**0.52**
-|                    |**2018**        |**0.01**             |    **0.07**        |**0.14**
-|                    |**2019**        |**0.02**             |    **0.16**        |**0.01**
-|Signs	             |2017            |0.01                 |    0.03            |0.35
-|                    |2018            |0.01                 |    0.01            |0.31
-|                    |2019            |0.01                 |    0.01            |0.01
-|Site Safety	     |2017            |0.00                 |    0.00            |0.80
-|                    |2018            |0.00                 |    0.00            |0.24
-|                    |2019            |0.01                 |    0.02            |0.08
-|Unknown	         |2017            |0.07                 |    0.08            |0.61
-|                    |2018            |0.04                 |    0.05            |0.53
-|                    |2019            |0.09                 |    0.08            |0.21
-|Zoning	             |2017            |0.01                 |    0.01            |0.65
-|                    |2018            |0.02                 |    0.00            |0.64
-|                    |2019            |0.01                 |    0.00            |0.33
+|                    |2018            |0.01                 |    0.01            |0.46
+|                    |2019            |0.01                 |    0.01            |0.30
+|Public Assembly	 |2017            |0.00                 |    0.00            |0.80
+|                    |2018            |0.00                 |    0.00            |1.04
+|                    |2019            |0.00                 |    0.00            |0.06
+|**Quality of Life** |**2017**        |**0.01**             |    **0.03**        |**0.43**
+|                    |**2018**        |**0.01**             |    **0.04**        |**0.30**
+|                    |**2019**        |**0.02**             |    **0.09**        |**0.07**
+|Signs	             |2017            |0.01                 |    0.01            |0.39
+|                    |2018            |0.01                 |    0.02            |0.36
+|                    |2019            |0.01                 |    0.01            |0.27
+|Site Safety	     |2017            |0.00                 |    0.00            |1.12
+|                    |2018            |0.00                 |    0.00            |0.47
+|                    |2019            |0.01                 |    0.01            |0.20
+|Unknown	         |2017            |0.07                 |    0.08            |0.60
+|                    |2018            |0.04                 |    0.09            |0.60
+|                    |2019            |0.09                 |    0.12            |0.39
+|Zoning	             |2017            |0.01                 |    0.00            |0.66
+|                    |2018            |0.02                 |    0.01            |0.67
+|                    |2019            |0.01                 |    0.00            |0.57
+
+
 
 This table shows the percentages of DoB ECB violations:
 
-- issued (counts)
-- imposed (dollars)
+- issued (counts, grouped by issuance year) 
+- imposed (dollars, grouped by hearing year)
 
-as well as the paid-to-imposed ratios, all broken out by year and by violation type, for 2017 - 2019.
+as well as the paid-to-imposed ratios, all broken out by hearing year and by violation type, for 2017 - 2019.
 
 We can see that `Construction` violations account for the lion's share of both the number of issued penalties and the total dollar-value of imposed penalties. Additionally, we can see that `Construction` violations show a poor paid-to-imposed ratio, which when paired with the outsized contributions to `Normalized Violation Counts` leads to a large percentage of violations not being paid. It would seem, then, that `Construction` violations are driving much of the recent declines in overall paid-to-imposed ratio. The large increase in the issuance of these violations (as show in [figure 7](#figure-7)) supports the idea that developers treat violation receipt as simply a cost of doing business. The decline we see in breaking out penalty payment by violation type suggests that some developers may even look at these violations as a _pay-as-you-wish_ cost of doing business.
 
