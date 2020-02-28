@@ -398,7 +398,7 @@ It would appear that the city has trouble collecting on its steeper penalties.
 
 #### Figure 16
  
-|ECB Violation Type	 |Hearing Year   |Normalized Violation Counts|Normalized Imposed Penalty|Paid to Imposed
+|ECB Violation Type	 |Year   |Normalized Violation Counts|Normalized Imposed Penalty|Paid to Imposed
 |:------------------:|:-------------: |:------------------: |:----------------:  |:-----------:
 |Boilers             |2017            |0.04                 |    0.02            |0.43
 |                    |2018            |0.03                 |    0.01            |0.41
