@@ -344,9 +344,9 @@ There are nine types of hearing status as following:
 
 All ECB violations need to be adjudicated by the Office of Administrative Trials and Hearings (OATH), so we analyzed the day-differences between hearing and issue dates across all DoB-issued ECB violations, broken out by year.
 
-The above chart shows us the average number of days that it took for OATH/ECB to hold a hearing (i.e. the delta, in days, between hearing and issue dates) from 2000 to 2019 (issue date year). The blue bars represent the average days-delta for each year and the black lines represent the standard deviation around those averages. A higher error bar indicates more volatility in the days-delta for that year.
+The above chart shows us the mean and median number of days that it took for OATH/ECB to hold a hearing (i.e. the delta, in days, between hearing and issue dates) from 2000 to 2019 (issue date year). As we have mentioned in figure 8, mean and median measure the central tendency of a distribution. The days-delta in the recession period (2006 - 2009) showed extreme positive skewness, e.g. in 2008, average number of days for DoB to hold a hearing on ECB violation after issuance was about 206 days, while the median was 78 days. This was likely a result of the sharp increase in ECB violations (shown in figure 10), meaning that the city was probably overwhelmed at that time.
 
-While the average days-delta fell to 97 in 2013, it has since climbed to to 127, an increase of around 30%. It's worth noting that the standard deviation has decreased noticeably over the same number of years. So, OATH/ECB is getting more consistent in its violation-hearing scheduling, but the typical time-to-hearing has increased a bit. 
+The median is much more robust to outliers than the mean is, so an up-tick in the media days-delta would be a solid indication of a slowdown in the ECB adjudication process. With that in mind, take note of the fact that between 2015 - 2019, the median days-delta value has grown by 65%. Therefore it could make sense to assume that the city may yet again be overwhelmed.
 
 #### Figure 13
 
@@ -446,7 +446,7 @@ This table shows the percentages of DoB ECB violations:
 
 as well as the paid-to-imposed ratios, all broken out by hearing year and by violation type, for 2017 - 2019.
 
-We can see that `Construction` violations account for the lion's share of both the number of issued penalties and the total dollar-value of imposed penalties. Additionally, we can see that `Construction` violations show a poor paid-to-imposed ratio, which when paired with the outsized contributions to `Normalized Violation Counts` leads to a large percentage of violations not being paid. It would seem, then, that `Construction` violations are driving much of the recent declines in overall paid-to-imposed ratio. The large increase in the issuance of these violations (as show in [figure 7](#figure-7)) supports the idea that developers treat violation receipt as simply a cost of doing business. The decline we see in breaking out penalty payment by violation type suggests that some developers may even look at these violations as a _pay-as-you-wish_ cost of doing business.
+We can see that `Construction` violations account for the lion's share of both the number of issued penalties and the total dollar-value of imposed penalties. Additionally, we can see that `Construction` violations show a poor paid-to-imposed ratio, which when paired with the out-sized contributions to `Normalized Violation Counts` leads to a large percentage of violations not being paid. It would seem, then, that `Construction` violations are driving much of the recent declines in overall paid-to-imposed ratio. The large increase in the issuance of these violations (as show in [figure 7](#figure-7)) supports the idea that developers treat violation receipt as simply a cost of doing business. The decline we see in breaking out penalty payment by violation type suggests that some developers may even look at these violations as a _pay-as-you-wish_ cost of doing business.
 
 For instance, with a paid-to-imposed ratio of just 34% in 2018 but a 80% contribution to all penalty dollars imposed, `Construction` penalties in 2018 single-handedly accounted for 73% of all violation-dollars imposed that year not being paid.
 
@@ -468,7 +468,16 @@ This last clause, that "further penalties may be more tied to the calendar month
 - [data](#figure-18-data)
 ![ ](figures/total_exp_imposed_paid.png  "total_dob_expense_imposed_paid_penalty")
 
-We calculated the total amount of imposed penalty and paid penalty for each year (by year of the hearing date) and then compared these numbers with the [total expense of DoB](https://data.cityofnewyork.us/City-Government/Expense-Actuals/7yay-m4ae). The DoB's expense data is only available for us from 2002 to 2017. It is surprising to see that penalty imposed amount exceeded the total expense of DoB from 2009 to 2015, especially in 2010 at 183M and 2011 at 177M. Given than the average days-delta between issue and hearing was around 200 days in 2009, most of the penalty imposed in 2010 were cases issued in 2009 or even earlier. Total DoB expense has increased since 2014 and total penalty started to drop two years later in 2016. However, the paid to imposed ratio since 2016 started to drop sharply, which is not a good sign on penalty collection. The City really need to improve its penalty collection process so that they could spend more money on law enforcement to end this infinite loop. 
+We wanted to put some of the normalized values we've been discussing into a dollar-value context, and so we plotted, in dollars and by hearing date year:
+- total imposed DoB ECB penalties
+- total unpaid DoB ECB penalties
+- [total annual expenses](https://data.cityofnewyork.us/City-Government/Expense-Actuals/7yay-m4ae) for the DoB
+
+The DoB's expense data was only available for 2002 - 2017 in the dataset that we chose to use, and so we restricted our plot to this time range.
+
+It is surprising to see that penalties imposed exceeded the total expense of DoB from 2009 to 2015, particularly so for 2010 and 2011, where penalties unpaid also exceeded the DoB's annual expenses.
+
+Given that, in 2009 the average delta between issue and hearing dates was around 200 days, most of the penalty imposed in 2010 were cases issued in 2009 or even earlier. Total DoB expense has increased since 2014 and total penalty started to drop two years later in 2016. However, the paid to imposed ratio since 2016 started to drop sharply, which is not a good sign on penalty collection. The City really need to improve its penalty collection process so that they could spend more money on law enforcement to end this infinite loop. 
 
 [^](#table-of-contents)
 ## Recommendations
@@ -838,26 +847,26 @@ Answers to such questions would better arm the city to weed out problematic acto
 
 |Year | Mean     |Median     |
 |:---:|:--------:|:----------:|
-|2000 |188.270972|	 79.0    |
-|2001 |167.616634|	 86.0    |
-|2002 |145.663659|	 69.0    |
-|2003 |139.183433|	 70.0    |
-|2004 |149.926249|	 67.0    |
-|2005 |164.968392|	 70.0    |
-|2006 |191.379515|	 73.0    |
-|2007 |200.772417|	 77.0    |
-|2008 |205.966584|	 78.0    |
-|2009 |197.040387|	 81.0    | 
-|2010 |167.696194|	 67.0    |
-|2011 |127.232758|	 57.0    |
-|2012 |113.836983|	 57.0    |
-|2013 |96.521071 |	 55.0    |
-|2014 |106.425972|	 62.0    |
-|2015 |109.598323|	 57.0    |
-|2016 |108.916190|	 65.0    |
-|2017 |123.004791|	 84.0    |
-|2018 |122.736749|	 89.0    |
-|2019 |126.714278|	 94.0    |
+|2000 |140.609901|	74    |
+|2001 |159.895876|	90    |
+|2002 |162.271387|	70    |
+|2003 |150.907231|	70    |
+|2004 |163.295384|	68    |
+|2005 |149.485777|	63    |
+|2006 |144.881281|	63    |
+|2007 |161.831988|	67    |
+|2008 |159.534562|	62    |
+|2009 |184.770590|	74    | 
+|2010 |195.284887|	87    |
+|2011 |185.827627|	83    |
+|2012 |147.744000|	61    |
+|2013 |141.319524|	56    |
+|2014 |121.419419|	58    |
+|2015 |120.036203|	56    |
+|2016 |125.854862|	60    |
+|2017 |121.893496|	68    |
+|2018 |137.364766|	86    |
+|2019 |145.701082|	105   |
 
 
 #### Figure 14 Data
@@ -1035,22 +1044,23 @@ Answers to such questions would better arm the city to weed out problematic acto
 - All numbers are in Millions
 - [back to figure](#figure-18)
 
-|Year|Total DoB Expense|Total Penalty Imposed|Total Penalty Paid|
+|Year|Unpaid Penalties|Imposed Penalties|Total Expense|
 |:--:|:------:|:---------:|:-------:|
-|2002| 56.378 |29.833850  |17.246261|
-|2003| 57.862 |31.848017  |18.680099|
-|2004| 57.895 |34.560425  |19.321676|
-|2005| 64.273 |40.769893  |22.579586|
-|2006| 81.526 |51.281448  |26.028716|
-|2007| 87.195 |60.095966  |28.832429|
-|2008| 99.410 |78.751320  |36.950962|
-|2009| 109.67 |118.775649 |53.641754|
-|2010| 101.53 |183.044131 |70.859220|
-|2011| 98.974 |176.776785 |62.305087|
-|2012| 95.062 |131.762804 |44.072819|
-|2013| 102.48 |112.377086 |38.949145|
-|2014| 98.679 |117.457328 |44.114595|
-|2015| 108.67 |127.387875 |50.058944|
-|2016| 134.72 |109.562015 |51.420393|
-|2017| 150.35 |120.734118 |57.782061|
+|2002| 12.587589 | 29.833850 |56.378|
+|2003| 13.167918 | 31.848017 |57.862|
+|2004| 15.238749 | 34.560425 |57.895|
+|2005| 18.190307 | 40.769893 |64.273|
+|2006| 25.252732 | 51.281448 |81.526|
+|2007| 31.263537 | 60.095966 |87.195|
+|2008| 41.800358 | 78.751320 |99.410|
+|2009| 65.133895 | 118.77564 |109.67|
+|2010| 112.18491 | 183.04413 |101.53|
+|2011| 114.47169 | 176.77678 |98.974|
+|2012| 87.689985 | 131.76280 |95.062|
+|2013| 73.427941 | 112.37708 |102.48|
+|2014| 73.342733 | 117.45732 |98.679|
+|2015| 77.328931 | 127.38787 |108.67|
+|2016| 58.141621 | 109.56201 |134.72|
+|2017| 62.952057 | 120.73411 |150.35|
+
 </font>
