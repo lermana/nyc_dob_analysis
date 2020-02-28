@@ -441,7 +441,6 @@ This table shows the percentages of DoB ECB violations:
 
 - issued (counts)
 - imposed (dollars)
-- paid (dollars)
 
 as well as the paid-to-imposed ratios, all broken out by year and by violation type, for 2017 - 2019.
 
