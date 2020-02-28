@@ -256,7 +256,7 @@ In this case, we filtered the data to 2006 - 2019 so that we could stick to plot
 
 The top complaint type, `Illegal Conversion`, is [defined](https://www1.nyc.gov/site/buildings/renter/illegal-conversions-vacates.page) by the city as "an alteration or modification of an existing building to create an additional housing unit without first obtaining approval from the New York City Department of Buildings," which have declined a bit over the past few years.
 
-Working without a permit came in second (and five times, first in 2010, 2011, 2012, 2016, and 2019) over the period studied. What type of work this corresponded to, we don't know, but it makes a person wonder what kinds of maintenance and construction activities are going on outside the purview of the authorities.
+Working without a permit came in first for several years in the period studied, and placed second in other years. What type of work this corresponded to, we don't know, but it makes a person wonder what kinds of maintenance and construction activities are going on outside the purview of the authorities.
 
 The number 3, and maybe least-assuring complaint type on the list, is that of `Elevator`. What we've plotted here is actually the result of rolling two, different complaint types up to a single label. These complaint types existed at different times, with the previous elevator category, `Elevator-Danger Condition/Shaft Open/Unguarded` in recent years being substituted out in favor of two new categories, with one being more severe than the other. What you see here is the old category through 2017, and the new, more-severe category for 2018 - 2019. See the chart's corresponding data for more information.
 
@@ -266,7 +266,7 @@ The official, somewhat-complete complaint-type-code mappings can be seen [here](
 - [data](#figure-7-data)
 ![ ](figures/violation_types.png  "ecb_violation_types")
 
-We can see here that `Construction` violations have absolutely skyrocketed since 2013, increasing from just-under 25k in that year to more than 70k in 2019. That doesn't mean there's no ambiguity - might the `Construction` category simply be absorbing some of what was previously considered `Unknown`? Or is the `Unknown` absorbing `Quality of Life`? It's hard to know. But, regardless, the increase in `Construction` violations stands on its own, which offers some support for the "yes, construction has been getting more harmful" argument.
+We can see here that `Construction` violations have absolutely skyrocketed since 2013, increasing from just-under 25k in that year to more than 70k in 2019. That doesn't mean there's no ambiguity - might the `Construction` category simply be absorbing some of what was previously considered `Unknown`? Could the `Unknown` category have absorbed some of what was previously tagged with `Quality of Life`? It's hard to know. Regardless, the increase in `Construction` violations is large enough to stand on its own, offering some support for the "yes, construction has been getting more harmful" argument.
 
 [^](#table-of-contents)
 ## Violation Penalties
