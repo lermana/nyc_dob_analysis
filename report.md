@@ -344,9 +344,9 @@ There are nine types of hearing status as following:
 
 All ECB violations need to be adjudicated by the Office of Administrative Trials and Hearings (OATH), so we analyzed the day-differences between hearing and issue dates across all DoB-issued ECB violations, broken out by year.
 
-The above chart shows us the mean and median number of days that it took for OATH/ECB to hold a hearing (i.e. the delta, in days, between hearing and issue dates) from 2000 to 2019 (issue date year). As we have mentioned in figure 8, mean and median measure the central tendency of a distribution. The days-delta in the recession period (2006 - 2009) showed extreme positive skewness, e.g. in 2008, average number of days for DoB to hold a hearing on ECB violation after issuance was about 206 days, while the median was 78 days. This was likely a result of the sharp increase in ECB violations (shown in figure 10), meaning that the city was probably overwhelmed at that time.
+The above chart shows us the mean and median number of days that it took for OATH/ECB to hold a hearing (i.e. the delta, in days, between hearing and issue dates) from 2000 to 2019 (issue date year). As we have mentioned in figure 8, mean and median measure the central tendency of a distribution. Both mean and median of the days-delta in the post recession period (2008 - 2012) reached their highest in 2010. The average number of days for DoB to hold a hearing on ECB violation after issuance was about 195 days, while the median was 87 days. This was likely a result of the sharp increase in ECB violations (shown in figure 10), meaning that the city was probably overwhelmed at that time.
 
-The median is much more robust to outliers than the mean is, so an up-tick in the media days-delta would be a solid indication of a slowdown in the ECB adjudication process. With that in mind, take note of the fact that between 2015 - 2019, the median days-delta value has grown by 65%. Therefore it could make sense to assume that the city may yet again be overwhelmed.
+The median is much more robust to outliers than the mean is, so an up-tick in the media days-delta would be a solid indication of a slowdown in the ECB adjudication process. With that in mind, take note of the fact that between 2015 - 2019, the median days-delta value has grown by 87%. Therefore it could make sense to assume that the city may yet again be overwhelmed.
 
 #### Figure 13
 
@@ -383,7 +383,7 @@ Active-to-total has held at at least 20% since 2001, and hit 30% in 2018, highli
 - [data](#figure-15-data)
 ![ ](figures/paid_to_imposed_bins.png  "paid_to_imposed_bins")
 
-We were interested in assessing whether, as it did when broken out by violation status, paid-to-imposed showed some variability across penalty size (in dollars). So, we calulated the paid-to-imposed ratio across 6 different imposed-penalty bins. These were (in dollars):
+We were interested in assessing whether, as it did when broken out by violation status, paid-to-imposed showed some variability across penalty size (in dollars). So, we calculated the paid-to-imposed ratio across 6 different imposed-penalty bins. These were (in dollars):
 
 - 0-500
 - 500-1,000
