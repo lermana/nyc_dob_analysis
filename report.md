@@ -83,12 +83,13 @@ With all of that out of the way, we can note the following:
 - the median annual paid ECB penalty, even when grouping by hearing date, has spent the last 3 years at $0[<sup>\*</sup>](#figure-9-data)
 - as the number of issued ECB violations has sky-rocketed over the last few years, the annual ratio of paid-to-imposed penalties has plummeted[<sup>\*</sup>](#figure-10-data)
 - despite starting the previous decade at around 25%, the ratio of the total $-value for in-default (no-show at hearing with an outstanding balance) ECB violations, proportionate to the total $-value of all imposed ECB violations, has held at over 50% for several years[<sup>\*</sup>](#figure-11-data)
-- despite the average number of days between violation imposition and ECB hearing date falling to under 100 back in 2013, this metric (albeit with less standard deviation around it) has risen to over 125 days[<sup>\*</sup>](#figure-12-data)
+- the median difference in days between dates of hearing and issuance for DoB-issued ECB violations last year breached 100 for the first time (in our data, since 2000) and is up 88% from 2013 [<sup>\*</sup>](#figure-12-data)
 - the temporality with which the DoB issues its own, administrative violations, which may be a part of the procedure for enforcing penalty payment, is surprising in its irregularity[<sup>\*</sup>](#figure-17-data)
+- the balance of unpaid DoB-issued ECB violations last year measured out at 42% of the DoB's total annual expenses
 
-More analysis on DoB-issued ECB penalties can be found [below](#violation-penalties), but suffice it to say that the ECB looks to be overwhelmed by the increase in issued violations over the last few years, and it may be having a hard time collecting the penalties for those violations.
+More analysis on DoB-issued ECB penalties can be found [below](#violation-penalties), but suffice it to say that the ECB looks to be overwhelmed by the increase in issued violations over the last few years, and that it may be having a hard time collecting the penalties for those violations.
 
-In a relevant argument, Danielle Chaim recently [noted](https://clsbluesky.law.columbia.edu/2020/02/20/how-common-ownership-can-lead-to-tax-avoidance/) in Columbia Law School's _CLS Blue Sky Blog_ that a large number of firms all committing tax avoidance at the same increases the likelihood of the government becoming overwhelmed in its enforcement, thus descreasing the probability of enforcement action. It is important that the city engage in, and have the proper resources to engage in, rigorous enforcement of its building code, lest developers, landlords, and others come to believe that there are only light consequences for flouting the building code. Even those industry practitioners who hold themselves to a higher standard may face pressure to cut corners if their competitors are repeatedly able to get away with delivering faster or cheaper solutions through kicking the metaphorical "consequence" can down the road. As we've already seen, such a culture can produce [severe consequences](https://www.nytimes.com/2019/12/30/nyregion/nyc-building-violations.html).
+In a relevant argument, Danielle Chaim recently [noted](https://clsbluesky.law.columbia.edu/2020/02/20/how-common-ownership-can-lead-to-tax-avoidance/) in Columbia Law School's _CLS Blue Sky Blog_ that a large number of firms all committing tax avoidance at the same increases the likelihood of the government becoming overwhelmed in its enforcement, thus decreasing the probability of enforcement action. It is important that the city engage in, and have the proper resources to engage in, rigorous enforcement of its building code, lest developers, landlords, and others come to believe that there are only light consequences for flouting the building code. Even those industry practitioners who hold themselves to a higher standard may face pressure to cut corners if their competitors are repeatedly able to get away with delivering faster or cheaper solutions through kicking the metaphorical "consequence" can down the road. As we've already seen, such a culture can produce [severe consequences](https://www.nytimes.com/2019/12/30/nyregion/nyc-building-violations.html).
 
 
 #### Recommendations - Summary
@@ -183,13 +184,13 @@ This dataset provides information on the DoB's own violations, which generally c
 - [data](#figure-1-data)
 ![ ](figures/percent_change_all.png  "percent_change_all")
 
-As many in real estate already know, there's a cyclical nature to construction activity. This is common in high-capEx industries such as construction and oil extraction where getting to a revenue-producing product requires heavy upfront spending. This leaves market partipants sensitive to long-term signals, due to a heavy exposure and lack of agility. These signals, however, may be both imperfect and followed by many a market participant. Crowding can lead to supply gluts (price dips), pullbacks (price increases), and eventual reivestment (in pursuit of the higher prices). We saw large increases in permit applications and issuances in the years immediately preceding the Great Recession (mid-aughts), and we saw another large run up from 2009 to around 2016 or 2017.
+As many in real estate already know, there's a cyclical nature to construction activity. This is common in high-capEx industries such as construction and oil extraction where getting to a revenue-producing product requires heavy upfront spending. This leaves market participants sensitive to long-term signals, due to a heavy exposure and lack of agility. These signals, however, may be both imperfect and followed by many a market participant. Crowding can lead to supply gluts (price dips), pullbacks (price increases), and eventual reinvestment (in pursuit of the higher prices). We saw large increases in permit applications and issuances in the years immediately preceding the Great Recession (mid-aughts), and we saw another large run up from 2009 to around 2016 or 2017.
 
-We also saw that, on the aggregate, complaints and violations track each other pretty well. However, we saw that these two (complaints and violations) seem to lag behind permit applications and issuances by about two years. We look to be in the midst of a plataeuing, or maybe even the beginnings of a downswing, in permitting activity. It's worth mentioning that there are more permits than applications each year since a single application might cover more than one type of work at a given job, with each type potentially receiving its own permit from the DoB.
+We also saw that, on the aggregate, complaints and violations track each other pretty well. However, we saw that these two (complaints and violations) seem to lag behind permit applications and issuances by about two years. We look to be in the midst of a plateauing, or maybe even the beginnings of a downswing, in permitting activity. It's worth mentioning that there are more permits than applications each year since a single application might cover more than one type of work at a given job, with each type potentially receiving its own permit from the DoB.
 
 As has already been noted the DoB has implemented a new system for applications and permitting known as [DOB NOW](https://www1.nyc.gov/site/buildings/industry/dob-now.page). This is the Department of Building's self-service online tool that enables applicants to do all business with the DoB online. We included the DOB NOW permits starting from 2017 (the number of permits issued through DOB NOW in 2016 was negligible).
 
-However, as has already been mentioned, we were limited in how we could make use of the DOB NOW applications data, due to there (at the time of this writing) not being a date column in that data set. As such, we estimated total annual applications from 2017 to 2019 based on applying the applications-to-permits ratio in 2016 to the number of permits issued in each of these subequent years. This method was chosen for the sake of simplicity. The estimated numbers are showed with a dotted line.
+However, as has already been mentioned, we were limited in how we could make use of the DOB NOW applications data, due to there (at the time of this writing) not being a date column in that data set. As such, we estimated total annual applications from 2017 to 2019 based on applying the applications-to-permits ratio in 2016 to the number of permits issued in each of these subsequent years. This method was chosen for the sake of simplicity. The estimated numbers are showed with a dotted line.
 
 #### Figure 2
 - [data](#figure-2-data)
@@ -243,7 +244,7 @@ One of the great catch-22's of modern life in NYC can be found in the interplay 
 
 The above ratios help to put the number of annual complaints and violations in context - i.e. let's scale each measure down by permit issuance, our proxy for construction activity.
 
-Complaints-to-permits reached 74% at the end of 2019, meaning that, for every 100 permits issued in 2019 there were 74 complaints made. To put this figure in context, this ratio sat at 43% in 2000, 95% in 2008, and 56% in 2015. One takeaway might be that real estate booms coincide with some combination of bad behavior, frustrated residents. That said, maybe the the 2008 peak had something to do with a more streamlined complaint-filing process - more work could be done to flesh this out. It's alo worth highlighting the growth this measure has exhibited over the last few years - it's almost 50% higher than it was 4 years ago.
+Complaints-to-permits reached 74% at the end of 2019, meaning that, for every 100 permits issued in 2019 there were 74 complaints made. To put this figure in context, this ratio sat at 43% in 2000, 95% in 2008, and 56% in 2015. One takeaway might be that real estate booms coincide with some combination of bad behavior, frustrated residents. That said, maybe the the 2008 peak had something to do with a more streamlined complaint-filing process - more work could be done to flesh this out. It's also worth highlighting the growth this measure has exhibited over the last few years - it's almost 50% higher than it was 4 years ago.
 
 Violations-to-complaints came in at 48% last year. This measure was at 40% in 2000, 58% in 2009 (record high), and 28% in 2015. Again, opportunities for confounding abound - but the growth since 2015 is real.
 
@@ -277,9 +278,9 @@ We can see here that `Construction` violations have absolutely skyrocketed since
 
 To better understand the underlying penalty data, we grouped the data by the years corresponding to two different date fields (hearing date and issue date) and calculated both the mean and median for each year. Note that _issue date_ is the date on which a violation is issued, and _hearing date_ is the date of the most recent, scheduled ECB hearing. A hearing presents an opportunity for the respondent named on a violation to either admit to or contest it.
 
-In statistics, the mean and median are two main measures for the [central tendency](https://en.wikipedia.org/wiki/Central_tendency) of a dataset - i.e. where do the values of an at-least-somewhat random variable tend to fall? Or, more colloquially: if you had to _expect_ one value from a dataset, what would it be? Expectation referes to a data's mean, but the mean can be unduly influenced by outliers, which the median is much more robust two. Thus, the measures are related but different, and their comparison can prove valuable.
+In statistics, the mean and median are two main measures for the [central tendency](https://en.wikipedia.org/wiki/Central_tendency) of a dataset - i.e. where do the values of an at-least-somewhat random variable tend to fall? Or, more colloquially: if you had to _expect_ one value from a dataset, what would it be? Expectation refers to a data's mean, but the mean can be unduly influenced by outliers, which the median is much more robust two. Thus, the measures are related but different, and their comparison can prove valuable.
 
-A positive (negative) difference between mean and median would indicate that the data is positively (negatively) [skewed](https://en.wikipedia.org/wiki/Skewness) - i.e. there are is a long / dispered "tail" stretching right-ward (left-ward) away from the probabilistic center of the data. In other words, skew indicates asymmetry - when the data falls away from its center, it tends to fall farther in one direction than in the other. The large, positive difference we can see between mean in median in this chart indicates that a relatively small number of high-valued penalties are "pulling" the mean away from the center of the data. Thus, the expectation for an imposed penalty is much higher than the actual midpoint of all imposed penalties.
+A positive (negative) difference between mean and median would indicate that the data is positively (negatively) [skewed](https://en.wikipedia.org/wiki/Skewness) - i.e. there are is a long / dispersed "tail" stretching right-ward (left-ward) away from the probabilistic center of the data. In other words, skew indicates asymmetry - when the data falls away from its center, it tends to fall farther in one direction than in the other. The large, positive difference we can see between mean in median in this chart indicates that a relatively small number of high-valued penalties are "pulling" the mean away from the center of the data. Thus, the expectation for an imposed penalty is much higher than the actual midpoint of all imposed penalties.
 
 Surprisingly, at the end of 2018 to 2019, both the mean and median measures (in the case of the median, only by issue date) sharply increased, indicating that the city issued many expensive DoB ECB violations.
 
@@ -344,32 +345,37 @@ There are nine types of hearing status as following:
 
 All ECB violations need to be adjudicated by the Office of Administrative Trials and Hearings (OATH), so we analyzed the day-differences between hearing and issue dates across all DoB-issued ECB violations, broken out by year.
 
-The above chart shows us the mean and median number of days that it took for OATH/ECB to hold a hearing (i.e. the delta, in days, between hearing and issue dates) from 2000 to 2019 (by hearing date year). As we have mentioned in figure 8, mean and median measure the central tendency of a distribution. Both mean and median of the days-delta in the post recession period (2008 - 2012) reached their highest in 2010. The average number of days for DoB to hold a hearing on ECB violation after issuance was about 195 days, while the median was 87 days. This was likely a result of the sharp increase in ECB violations (shown in figure 10), meaning that the city was probably overwhelmed at that time.
+The above chart shows us the mean and median number of days that it took for OATH/ECB to hold a hearing (i.e. the delta, in days, between hearing and issue dates) from 2000 to 2019 (by hearing date year). As we have mentioned in [figure 8](#figure-8), both mean and median measure the central tendency of a distribution, and a positive difference between the two indicates positive skewness, which we can see here. This means that there are likely extreme values that are "pulling" the mean higher.
 
-The median is much more robust to outliers than the mean is, so an up-tick in the media days-delta would be a solid indication of a slowdown in the ECB adjudication process. With that in mind, take note of the fact that between 2015 - 2019, the median days-delta value has grown by 87%. Therefore it could make sense to assume that the city may yet again be overwhelmed.
+Both the mean and median days-delta reached record-high values in 2010. For all the hearings that year, violations had been issued, on average, 195 days earlier; the median difference was 87 days. The fact that these measures were greater than they were in any previous years is likely a result of the sharp increase in ECB violations (shown in [figure 10](#figure-10)) that happened between 2007 and 2009. In other words, the city was probably overwhelmed.
+
+The median is much more robust to outliers than the mean is, so an up-tick in the media days-delta would be a solid indicator of a slowdown in the ECB adjudication process. With that in mind, take note of the fact that between 2015 - 2019, the median days-delta value has grown by 87%. It is therefore likely reasonable to assume that the city is, once again, overwhelmed.
 
 #### Figure 13
 
-|Quantiles (%) | 2017 (days) |2018 (days)  |
-|:-------:     |:-------:    |:--------:|
-|0.00	       |12           |  1
-|5.00	       |45           |  47
-|10.00	       |47           |  49
-|25.00	       |50           |  56
-|50.00	       |84           |  89
-|75.00	       |161          |  155
-|90.00	       |247          |  230
-|**95.00**     |**308**      |**291**
-|99.00	       |486          |  409
-|99.90	       |811          |  576
-|99.99	       |965          |	656
-|100.00        |1031         |  699
+|Quantiles (%) | 2017 (days) |2018 (days)|2019 (days)|
+|:-------:     |:-------:    |:--------:|:----------:|
+|0.00	       |12	         |  1       |1
+|5.00	       |45	         |  46      |49
+|10.00	       |47	         |  48      |53
+|25.00	       |49           |  54      |69
+|50.00	       |68	         |  86      |105
+|75.00	       |133          |  158     |175
+|90.00	       |212          |  246     |253
+|**95.00**     |**272**      |**311**   |**320**
+|99.00	       |697          |  668     |634
+|99.90	       |3092         |  3026    |2891
+|99.99	       |6279         |	7447    |3880
+|100.00        |10347        |  9639    |6506
 
-We further analyze the days-delta values described [above](#figure-12) through looking at some different [percentiles](https://en.wikipedia.org/wiki/Percentile) for this measure, in both 2017 and 2018. The value for a given percentile represents the value below which a given percent of the data lies. For instance, the median (it would be reasonable to say) is the 50th percentile.
 
-We highlight the 95th percentile to substantiate the claim that most violations have been heard within a year. In 2017, 95% of DoB-issued ECB violations saw hearings within 310 days of issuance. The 95% percentile of days-delta was in 2018. Penalty is imposed at hearing and is, as far as we know, due pretty much immediately, unless some other agreement has been made.
+We further analyze the days-delta values described [above](#figure-12) through looking at some different [percentiles](https://en.wikipedia.org/wiki/Percentile) for this measure, in 2017, 2018, and 2019 (by hearing date year). The value for a given percentile represents the value below which a given percent of the data lies. For instance, the median (it would be reasonable to say) is the 50th percentile.
+
+We highlight the 95th percentile to substantiate the claim that most violations have been heard within a year. In 2017, 95% of DoB-issued ECB violations that had a hearing that year had done so within 272 days of issuance. For 2018, this number was 311 days. A penalty, if imposed, is imposed at hearing and is (as far as we know) due pretty much immediately, unless some other agreement has been made.
 
 Thus, a full year (or 365 days) seems a good window over which to judge penalty collection, which adds strength to our paid-penalty analyses accompanying Figures 9 and 10.
+
+Finally, it is worth mentioning that we have about 30 years of DoB ECB violation data, so it is not inconceivable that, over this entire time period, a small number of violations managed to ride out the pre-hearing period for a very long time. These extreme values may also represent data errors. We're not sure.
 
 #### Figure 14
 - [data](#figure-14-data)
@@ -475,9 +481,11 @@ We wanted to put some of the normalized values we've been discussing into a doll
 
 The DoB's expense data was only available for 2002 - 2017 in the dataset that we chose to use, and so we restricted our plot to this time range.
 
-It is surprising to see that penalties imposed exceeded the total expense of DoB from 2009 to 2015, particularly so for 2010 and 2011, where penalties unpaid also exceeded the DoB's annual expenses.
+It is surprising to see that penalties imposed exceeded the total expense of the DoB from 2009 to 2015. For 2010 and 2011, penalties unpaid also exceeded the DoB's annual expenses.
 
-Given that, in 2009 the average delta between issue and hearing dates was around 200 days, most of the penalty imposed in 2010 were cases issued in 2009 or even earlier. Total DoB expense has increased since 2014 and total penalty started to drop two years later in 2016. However, the paid to imposed ratio since 2016 started to drop sharply, which is not a good sign on penalty collection. The City really need to improve its penalty collection process so that they could spend more money on law enforcement to end this infinite loop. 
+The DoB's expenses have increased since 2014, during which time penalties imposed (in dollars) have oscillated, and were up only a small bit as of 2017, our most recent year. Unpaid penalties for 2017 are down from where they were a couple of years prior, but still tie out, proportionately, to 42% of the DoB's total annual expenses.
+
+The DoB could potentially get much more funding for itself, and therefore many more resources with which it could squash problematic activity, if it was better able to collect on outstanding payments.
 
 [^](#table-of-contents)
 ## Recommendations
@@ -490,11 +498,11 @@ Rigorous enforcement of DoB-issued ECB penalty collection would likely reduce th
 - increasing the likelihood of penalty payment
 - discouraging bad behavior that may be driven by the opportunity for low-cost penalty default
 
-Additionally, the maintenance of a reasonable gap between issuance and hearing dates for DoB-issued ECB penalties would ensure that developers and landlords could realize their harmful behavior immediately and would also reduce backlog in ECB violations cases.
+Additionally, the maintenance of a reasonable gap between issuance and hearing dates for DoB-issued ECB penalties would reduce the ability of harmful actors to delay, e.g. until units in a new building are sold, penalty payment in such a way that is helpful to their cash flows.
 
 The achievement of these goals may require additional human resources, since it seems that the increases in penalty collection delay or laxness are well-correlated to increases in penalty issuance volumes. That said, automated and possibly statistical tools could allow for a more efficient and manageable path to execution.
 
-Finally, the City needs to ensure that violation penalties do not stay stagnant in competitive real state markets. The profit from arising in residential housing price should be priced in penalty to avoid building owners and developers are careless on their violations. 
+Finally, the city needs to ensure that violation penalties do not remain stagnant. New York City, even in its ups and downs, remains a competitive real state market. The profit from arising in residential housing price should be priced in penalty to avoid building owners and developers are careless on their violations. 
 
 
 [^](#table-of-contents)
@@ -1040,7 +1048,7 @@ Answers to such questions would better arm the city to weed out problematic acto
 
 
 #### Figure 18 Data
-- *Total DoB Expense, Penalty Imposed, and Penalty Paid, Yearly*
+- *Penalties Imposed, Penalties Unpaid, and DoB Expenses: Yearly, by Hearing Date*
 - All numbers are in Millions
 - [back to figure](#figure-18)
 
