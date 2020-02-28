@@ -448,7 +448,7 @@ as well as the paid-to-imposed ratios, all broken out by hearing year and by vio
 
 We can see that `Construction` violations account for the lion's share of both the number of issued penalties and the total dollar-value of imposed penalties. Additionally, we can see that `Construction` violations show a poor paid-to-imposed ratio, which when paired with the outsized contributions to `Normalized Violation Counts` leads to a large percentage of violations not being paid. It would seem, then, that `Construction` violations are driving much of the recent declines in overall paid-to-imposed ratio. The large increase in the issuance of these violations (as show in [figure 7](#figure-7)) supports the idea that developers treat violation receipt as simply a cost of doing business. The decline we see in breaking out penalty payment by violation type suggests that some developers may even look at these violations as a _pay-as-you-wish_ cost of doing business.
 
-For instance, with a paid-to-imposed ratio of just 34% in 2018 but a 77% contribution to all penalty dollars imposed, `Construction` penalties in 2018 single-handedly accounted for 27% of all violation-dollars imposed that year not being paid.
+For instance, with a paid-to-imposed ratio of just 34% in 2018 but a 80% contribution to all penalty dollars imposed, `Construction` penalties in 2018 single-handedly accounted for 73% of all violation-dollars imposed that year not being paid.
 
 `Quality of Life` violations took an even more drastic tumble, with regard to paid-to-imposed ratio. These account for only a small percent of the total dollar-value of imposed penalties, although this number grew noticeably between 2018 and 2019.
 
