@@ -256,7 +256,7 @@ In this case, we filtered the data to 2006 - 2019 so that we could stick to plot
 
 The top complaint type, `Illegal Conversion`, is [defined](https://www1.nyc.gov/site/buildings/renter/illegal-conversions-vacates.page) by the city as "an alteration or modification of an existing building to create an additional housing unit without first obtaining approval from the New York City Department of Buildings," which have declined a bit over the past few years.
 
-Working without a permit came in second (and five times, first in 2010, 2011, 2012, 2016, and 2019) over the period studied. What type of work this corresponded to, we don't know, but it makes a person wonder what kinds of maintenance and construction activities are going on outside the purview of the authorities.
+Working without a permit came in first for several years in the period studied, and placed second in other years.. What type of work this corresponded to, we don't know, but it makes a person wonder what kinds of maintenance and construction activities are going on outside the purview of the authorities.
 
 The number 3, and maybe least-assuring complaint type on the list, is that of `Elevator`. What we've plotted here is actually the result of rolling two, different complaint types up to a single label. These complaint types existed at different times, with the previous elevator category, `Elevator-Danger Condition/Shaft Open/Unguarded` in recent years being substituted out in favor of two new categories, with one being more severe than the other. What you see here is the old category through 2017, and the new, more-severe category for 2018 - 2019. See the chart's corresponding data for more information.
 
