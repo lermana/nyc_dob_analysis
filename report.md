@@ -266,7 +266,7 @@ The official, somewhat-complete complaint-type-code mappings can be seen [here](
 - [data](#figure-7-data)
 ![ ](figures/violation_types.png  "ecb_violation_types")
 
-We can see here that `Construction` violations have absolutely skyrocketed since 2013, increasing from just-under 25k in that year to more than 70k in 2019. That doesn't mean there's no ambiguity - might the `Construction` category simply be absorbing some of what was previously considered `Unknown`? Or is the `Unknown` absorbing `Quality of Life`? It's hard to know. But, regardless, the increase in `Construction` violations stands on its own, which offers some support for the "yes, construction has been getting more harmful" argument.
+We can see here that `Construction` violations have absolutely skyrocketed since 2013, increasing from just-under 25k in that year to more than 70k in 2019. That doesn't mean there's no ambiguity - might the `Construction` category simply be absorbing some of what was previously considered `Unknown`? Could the `Unknown` category have absorbed some of what was previously tagged with `Quality of Life`? It's hard to know. Regardless, the increase in `Construction` violations is large enough to stand on its own, offering some support for the "yes, construction has been getting more harmful" argument.
 
 [^](#table-of-contents)
 ## Violation Penalties
