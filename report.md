@@ -85,7 +85,7 @@ With all of that out of the way, we can note the following:
 - despite starting the previous decade at around 25%, the ratio of the total $-value for in-default (no-show at hearing with an outstanding balance) ECB violations, proportionate to the total $-value of all imposed ECB violations, has held at over 50% for several years[<sup>\*</sup>](#figure-11-data)
 - the median difference in days between dates of hearing and issuance for DoB-issued ECB violations last year breached 100 for the first time (in our data, since 2000) and is up 88% from 2013 [<sup>\*</sup>](#figure-12-data)
 - the temporality with which the DoB issues its own, administrative violations, which may be a part of the procedure for enforcing penalty payment, is surprising in its irregularity[<sup>\*</sup>](#figure-17-data)
-- the balance of unpaid DoB-issued ECB violations last year measured out at 42% of the DoB's total annual expenses
+- the balance of unpaid DoB-issued ECB violations last year measured out at 42% of the DoB's total annual expenses[<sup>\*</sup>](#figure-18-data)
 
 More analysis on DoB-issued ECB penalties can be found [below](#violation-penalties), but suffice it to say that the ECB looks to be overwhelmed by the increase in issued violations over the last few years, and that it may be having a hard time collecting the penalties for those violations.
 
