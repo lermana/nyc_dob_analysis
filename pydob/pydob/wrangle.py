@@ -15,7 +15,7 @@ def get_all_dataset_stuff(dataset_name):
 
     # we call these now
     read_csv_kwargs = funcs.get("read_csv_kwargs", pass_through_func)()
-    conversions = funcs["conversions"]()
+    conversions = funcs.get("conversions", pass_through_func)()
 
     # and save these for later
     addtnl_wrangle_func = funcs.get("addtnl_wrangle", pass_through_func)

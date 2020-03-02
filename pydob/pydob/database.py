@@ -90,6 +90,13 @@ def get_violations_ecb(filter_year=None):
             )
 
 
+def get_expense_actuals(filter_year=None):
+    return get_table(
+                table_name="expense_actuals",
+                filter_date_col="fisc_yr",
+                filter_year=filter_year
+            )
+
 def streeteasy_wrapper(func):
 
     @wraps(func)

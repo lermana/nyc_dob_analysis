@@ -19,7 +19,7 @@ if DATA_DIR is None:
 
 DATASET_NAMES = (
         "applications", "permits", "permits_now", 
-        "complaints", "violations_dob", "violations_ecb"
+        "complaints", "violations_dob", "violations_ecb", "expense_actuals"
     )
 
 # get path for DoB file writing
@@ -34,6 +34,8 @@ PERMITS_NOW_URL = BASE_URL.format("rbx6-tga4")
 COMPLAINTS_URL = BASE_URL.format("eabe-havv")
 VIOLATIONS_DOB_URL = BASE_URL.format("3h2n-5cm9")
 VIOLATIONS_ECB_URL = BASE_URL.format("6bgk-3dad")
+EXPENSE_ACTUALS_URL = BASE_URL.format("7yay-m4ae")
+
 
 # DB connection string, and table names
 DATABASE = os.path.join(DATA_DIR, "dob_data.db")
