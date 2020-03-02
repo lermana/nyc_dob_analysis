@@ -41,7 +41,7 @@ You can also reach out to us over [email](mailto:contact@newtrails.io).
 
 #### Problem Statement
 
-Spurred by personal encounters with construction-related, quality-of-life issues, we set out to study building and construction trends in NYC. Our hope was to gain a better understanding of the NYC real-estate construction landscape. Specifically, we sought to answer the following questions:
+Facing an onslaught of construction-related, quality-of-life issues and earning little in the way of respite through filing complaints with the city, we set out to study building and construction trends in NYC. Our hope was to gain a better understanding of the NYC real-estate construction landscape. Specifically, we sought to answer the following questions:
 
 1. is NYC currently over-indexing, compared to historical trends, with respect to construction activity?
 2. is the construction that's going on of a more harmful nature, and / or less respectful to residents' quality of life?
