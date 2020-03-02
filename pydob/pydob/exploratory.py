@@ -235,7 +235,7 @@ def get_ecb_penalty_year_month_by_hearing_df(
     return df.groupby(to_group_by).agg(agg_method_or_methods)
 
 
-def get_ecb_penalty_year_by_hearing_df(
+def violations_ecb_penalties_year_agg(
                             agg_method_or_methods=np.mean,
                             filter_year=2000,
                             to_group_by=["hearing_date_year"]
@@ -355,12 +355,12 @@ def complaints_year(filter_year=2000):
                     )
 
 
-def violations_ecb_year(filter_year=2000):
+def violations_ecb_year_counts(filter_year=2000, year_col="issue_date_year"):
     return convert_float_indices_to_int(
             get_year_counts(
                         dataset_name="violations_ecb",
                         index_col="isn_dob_bis_extract",
-                        year_col="issue_date_year",
+                        year_col=year_col,
                         filter_year=filter_year
                     ))
 
@@ -429,12 +429,13 @@ def complaints_year_month(filter_year=2000):
                     )
 
 
-def violations_ecb_year_month(filter_year=2000):
+def violations_ecb_year_month_counts(filter_year=2000, year_col="issue_date_year",
+                                     month_col="issue_date_month"):
     return get_year_month_counts(
                       dataset_name="violations_ecb",
                       index_col="isn_dob_bis_extract",
-                      year_col="issue_date_year",
-                      month_col="issue_date_month",
+                      year_col=year_col,
+                      month_col=month_col,
                       filter_year=filter_year
                   )
 
