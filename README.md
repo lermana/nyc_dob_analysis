@@ -38,7 +38,7 @@ Finally, the program will create a new folder (a sub-directory of `DOB_DATA_DIR`
 
 Once `pydob` has been installed and `DOB_DATA_DIR` set to your liking, you are ready to run the program:
 ```
-from pydob import build
+from pydob.build import build
 build()
 ```
 Note that, if you choose to rerun at some point (maybe due to network issues or your making of modifications to the code) you can pass `use_existing=True` to `build` to avoid re-downloading any DoB data that is already available in `DOB_DATA_DIR`.
