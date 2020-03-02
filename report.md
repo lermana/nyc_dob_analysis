@@ -198,7 +198,7 @@ However, as has already been mentioned, we were limited in how we could make use
 
 Autocorrelation represents "the correlation of a signal with a delayed copy of itself," as per [Wikipedia](https://en.wikipedia.org/wiki/Autocorrelation). Figure 2 shows the autocorrelation in monthly percent changes in permits, complaints, and violations. As with [correlation](https://en.wikipedia.org/wiki/Correlation_and_dependence), an autocorrelation of 1 indicates a perfect and positive correlation, while an autocorrelation of -1 shows a perfect and negative correlation - an autocorrelation of 0 indicates a lack of correlation. We looked at the autocorrelations of lags / shifted-values 1 through 30.
 
-The permits data exhibited very strong autocorrelation at a lag of 12, i.e. between permits issued in the current month and in the same month in the previous year, reaching .71. We imagine that this is driven by auto-renewals. Autocorrelation in complaints also reached its highest point, 0.45, at lag 12 - this could be driven by auto-generated complaints, but we don't know. In violations, we again found the strongest autocorrelation, 0.3 at lag 12.
+The permits data exhibited very strong autocorrelation at a lag of 12, i.e. between permits issued in the current month and in the same month in the previous year, reaching .71. We imagine that this is driven by auto-renewals. Autocorrelation in complaints also reached its highest point, 0.45, at lag 12 - this could be driven by auto-generated complaints, but we don't know. In violations, we again found the strongest autocorrelation, 0.23 at lag 12.
 
 [^](#table-of-contents)
 ## Applications and Permits
@@ -562,36 +562,36 @@ Answers to such questions would better arm the city to weed out problematic acto
 
 | Lags| Permits | Complaints   | Violations (ECB) |
 | :--:| ------: | ---------:   | ---------------: |
-| 1   | -0.382373 | -0.313691  |  -0.291068       |
-| 2   | -0.008993 |  0.194009  |   0.025308       |
-| 3   |  0.146137 |  0.038190  |   0.068256       |
-| 4   | -0.259690 | -0.223919  |  -0.107328       |
-| 5   |  0.148509 |  0.075229  |   0.099334       |
-| 6   | -0.182140 | -0.225010  |  -0.139810       |
-| 7   |  0.089662 | -0.064170  |   0.056295       |
-| 8   | -0.176381 | -0.063100  |  -0.116743       |
-| 9   |  0.147122 | -0.047402  |   0.122574       |
-| 10  | -0.159407 | -0.025230  |  -0.069506       |
-| 11  | -0.143229 | -0.017490  |  -0.085073       |
-| 12  |  0.707353 |  0.415345  |   0.236153       |
-| 13  | -0.362506 | -0.215213  |  -0.130263       |
-| 14  |  0.162864 |  0.336686  |   0.134334       |
-| 15  |  0.026297 | -0.058940  |  -0.007688       |
-| 16  | -0.247162 | -0.103298  |  -0.096528       |
-| 17  |  0.242613 |  0.055483  |   0.010223       |
-| 18  | -0.336469 | -0.324666  |  -0.064154       |
-| 19  |  0.134917 | -0.009868  |   0.108028       |
-| 20  | -0.121456 | -0.060456  |  -0.180632       |
-| 21  |  0.049985 | -0.112659  |   0.093528       |
-| 22  | -0.115574 |  0.167879  |  -0.054410       |
-| 23  | -0.040642 | -0.102237  |  -0.011686       |
-| 24  |  0.499464 |  0.383696  |   0.236234       |
-| 25  | -0.177592 | -0.094395  |  -0.137769       |
-| 26  |  0.118807 |  0.335357  |   0.008371       |
-| 27  | -0.060310 | -0.129620  |  -0.012436       |
-| 28  | -0.106392 | -0.099436  |   0.004337       |
-| 29  |  0.187828 |  0.083418  |   0.079013       |
-| 30  | -0.370341 | -0.331938  |  -0.146401       |
+| 1   | -0.382373 | -0.328890  |  -0.291068       |
+| 2   | -0.008993 |  0.192306  |   0.025308       |
+| 3   |  0.146137 |  0.039626  |   0.068256       |
+| 4   | -0.259690 | -0.244665  |  -0.107328       |
+| 5   |  0.148509 |  0.080146  |   0.099334       |
+| 6   | -0.182140 | -0.225224  |  -0.139810       |
+| 7   |  0.089662 | -0.070911  |   0.056295       |
+| 8   | -0.176381 | -0.075883  |  -0.116743       |
+| 9   |  0.147122 | -0.034335  |   0.122574       |
+| 10  | -0.159407 | -0.006957  |  -0.069506       |
+| 11  | -0.143229 | -0.026291  |  -0.085073       |
+| 12  |  0.707353 |  0.449963  |   0.236153       |
+| 13  | -0.362506 | -0.235264  |  -0.130263       |
+| 14  |  0.162864 |  0.336698  |   0.134334       |
+| 15  |  0.026297 | -0.056239  |  -0.007688       |
+| 16  | -0.247162 | -0.130894  |  -0.096528       |
+| 17  |  0.242613 |  0.078137  |   0.010223       |
+| 18  | -0.336469 | -0.339339  |  -0.064154       |
+| 19  |  0.134917 | -0.011767  |   0.108028       |
+| 20  | -0.121456 | -0.054585  |  -0.180632       |
+| 21  |  0.049985 | -0.116279  |   0.093528       |
+| 22  | -0.115574 |  0.184815  |  -0.054410       |
+| 23  | -0.040642 | -0.113334  |  -0.011686       |
+| 24  |  0.499464 |  0.403487  |   0.236234       |
+| 25  | -0.177592 | -0.105215  |  -0.137769       |
+| 26  |  0.118807 |  0.337581  |   0.008371       |
+| 27  | -0.060310 | -0.130789  |  -0.012436       |
+| 28  | -0.106392 | -0.116708  |   0.004337       |
+| 29  |  0.187828 |  0.098104  |   0.079013       |
+| 30  | -0.370341 | -0.357268  |  -0.146401       |
 
 
 --
@@ -911,12 +911,12 @@ Answers to such questions would better arm the city to weed out problematic acto
 - *Paid-to-Imposed Ratio, Binned: 2016 - 2019*
 - [back to figure](#figure-15)
 
-|issue_date_year  |(0, 500] |(500, 1000] |(1000, 5000] |(5000, 10000]   |(10000, 50000] |(50000, 100000]|
-|:---------------:|:-------:|:----------:|:-----------:|:-------------:|:-------------:|:--------------:|		
-|2016	          |0.883693	|0.855209	 |0.620740	   |0.442213	   | 0.206192	   |     0.087941
-|2017	          |0.850331	|0.792443	 |0.575757	   |0.409464	   | 0.203460	   |     0.083333
-|2018	          |0.782018	|0.773744	 |0.598378	   |0.234511	   | 0.086297	   |     0.020094
-|2019	          |0.562664	|0.501429	 |0.224271	   |0.088075	   | 0.026535	   |     0.000000
+|Hearing Year  |(0, 500] |(500, 1000] |(1000, 5000] |(5000, 10000]   |(10000, 50000] |(50000, 100000]|
+|:------------:|:-------:|:----------:|:-----------:|:-------------:|:-------------:|:--------------:|		
+|2016	       |89.959553	|87.277110	 |63.722627	   |41.092119	   | 19.575326	   |  16.12171
+|2017	       |86.242135	|81.987317	 |59.067698	   |43.057869	   | 21.543053	   |  3.979885
+|2018	       |81.402043	|77.379626	 |61.629957	   |27.893900	   | 12.103294	   |  4.879977
+|2019	       |67.176280	|65.304715	 |48.510967	   |17.165930	   | 4.793826	   |  0.449684
 
 
 #### Figure 17 Data
