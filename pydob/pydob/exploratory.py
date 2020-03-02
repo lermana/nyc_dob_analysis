@@ -69,7 +69,6 @@ def get_sql(
        cols_to_select = ""
 
     cols_to_select += year_col
-
     sql = f"""
        select {cols_to_select}
        from {dataset_name}
@@ -78,7 +77,6 @@ def get_sql(
 
     if addtnl_clause:
         sql += f"\nand {addtnl_clause}"
-
     return sql
 
 
@@ -190,58 +188,13 @@ def get_dataset_type_df(
     return df.groupby([year_col, type_col]).count()
 
 
-def get_ecb_penalty_year_month_by_issue_df(
-                            agg_method_or_methods=np.mean,
-                            filter_year=2000,
-                            to_group_by=["issue_date_year", "issue_date_month"]
-                        ):
-    sql = get_sql(
-               "issue_date_year", "issue_date_month", "penality_imposed", "amount_paid",
-               dataset_name="violations_ecb", filter_year=filter_year
-            )
-
-    df = database.get_query_as_df(sql)
-
-    return df.groupby(to_group_by).agg(agg_method_or_methods)
-
-
-def get_ecb_penalty_year_by_issue_df(
-                            agg_method_or_methods=np.mean,
-                            filter_year=2000,
-                            to_group_by=["issue_date_year"]
-                        ):
-    sql = get_sql(
-               "issue_date_year", "penality_imposed", "amount_paid",
-               dataset_name="violations_ecb", filter_year=filter_year
-            )
-
-    df = database.get_query_as_df(sql)
-
-    return df.groupby(to_group_by).agg(agg_method_or_methods)
-
-
-def get_ecb_penalty_year_month_by_hearing_df(
-                            agg_method_or_methods=np.mean,
-                            filter_year=2000,
-                            to_group_by=["hearing_date_year", "hearing_date_month"]
-                        ):
-    sql = get_sql(
-               "hearing_date_year", "hearing_date_month", "penality_imposed", "amount_paid",
-               dataset_name="violations_ecb", filter_year=filter_year
-            )
-
-    df = database.get_query_as_df(sql)
-
-    return df.groupby(to_group_by).agg(agg_method_or_methods)
-
-
 def violations_ecb_penalties_year_agg(
                             agg_method_or_methods=np.mean,
                             filter_year=2000,
-                            to_group_by=["hearing_date_year"]
+                            to_group_by="hearing_date_year"
                         ):
     sql = get_sql(
-               "hearing_date_year", "penality_imposed", "amount_paid",
+               to_group_by, "penality_imposed", "amount_paid",
                dataset_name="violations_ecb", filter_year=filter_year
             )
 
