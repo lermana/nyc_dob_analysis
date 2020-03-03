@@ -109,11 +109,17 @@ Finally, the program will create a new folder (a sub-directory of `DOB_DATA_DIR`
 
 #### `build`
 
-Once `pydob` has been installed and `DOB_DATA_DIR` set to your liking, you are ready to run the program:
+Once `pydob` has been installed and `DOB_DATA_DIR` set to your liking, you are ready to run the setup program:
 ```
 from pydob.build import build
 build()
 ```
+This program will download all the requisite data (saving these files to your machine) and then process it so that it's ready for analysis, depositing the results in a SQLite database.
+
 Note that, if you choose to rerun at some point (maybe due to network issues or your making of modifications to the code) you can pass `use_existing=True` to `build` to avoid re-downloading any DoB data that is already available in `DOB_DATA_DIR`.
 
 Also note that the DoB datasets each span roughly 1-2+M rows and 20-50 columns, which means that running `build` may take upwards of an hour and may require significant computational capacity from your local machine.
+
+#### Notebooks
+
+To actually generate the charts in our report, you will have to run our Jupyter notebooks, which you can find [here](https://github.com/lermana/nyc_dob_analysis/tree/master/notebooks).
