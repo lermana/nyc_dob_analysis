@@ -170,7 +170,7 @@ The DoB issued [ECB/OATH](https://www1.nyc.gov/site/buildings/business/environme
 
 Please note that, unless we explicitly state otherwise, all "violations" discussed are taken to be DoB-issued ECB violations.
 
-Also, **please note** that the DoB seems to update both paid- and imposed-penalty data as new information comes in. As such, the total figures (as well as the related ratios) pertaining to paid and imposed penalty values may come out differently, depending on when this data is pulled. Our charts our based off of data that was current as of mid-February 2020.
+Also, **please note** that the DoB seems to update both paid- and imposed-penalty data as new information comes in. As such, the total figures (as well as the related ratios) pertaining to paid and imposed penalty values may come out differently, depending on when this data is pulled. Our charts are based off of data that was current as of mid-February 2020.
 
 #### DoB Violations
 - [data](https://data.cityofnewyork.us/Housing-Development/DOB-Violations/3h2n-5cm9)
