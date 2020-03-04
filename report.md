@@ -453,9 +453,9 @@ This table shows the percentages of DoB ECB violations:
 
 as well as the paid-to-imposed ratios, also as grouped by hearing year. All data displayed is broken out by year and by violation type, for 2017 - 2019.
 
-We can see that `Construction` violations account for the lion's share of both the number of issued penalties and the total dollar-value of imposed penalties. Additionally, we can see that `Construction` violations show a poor paid-to-imposed ratio. This relative lack of payment, paired with outsized contributions to `Normalized Imposed Penalty`, has led to a large percentage of the violation-dollars imposed in recent years not being paid.
+We can see that `Construction` violations account for the lion's share of both the number of issued penalties and the total dollar-value of imposed penalties. Additionally, we can see that `Construction` violations show a poor paid-to-imposed ratio. This relative lack of payment, paired with outsized contributions to `Normalized Imposed Penalty`, has led to a large percentage of the violation dollars imposed in recent years not being paid.
 
-More quantitatively, with a paid-to-imposed ratio of just 34% in 2018 but an 80% contribution to all penalty dollars imposed, `Construction` penalties in 2018 single-handedly account for the current (as of our analysis) *non-payment of 73% of all violation-dollars imposed that year*.
+More quantitatively, with a paid-to-imposed ratio of just 34% in 2018 but an 80% contribution to all penalty dollars imposed, `Construction` penalties in 2018 single-handedly account for the current (as of our analysis) *non-payment of 73% of all violation dollars imposed that year*.
 
 `Quality of Life` violations, with regard to paid-to-imposed ratio, tumbled even more drastically - only 7% of those that were issued last year have been paid. These account for only a small percent of the total dollar-value of imposed penalties, although that contribution grew noticeably between 2018 and 2019.
 
