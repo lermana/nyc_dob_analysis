@@ -457,7 +457,7 @@ We can see that `Construction` violations account for the lion's share of both t
 
 The large increase in the issuance of these violations (as show in [figure 7](#figure-7)), as construction activity overall has increased, supports the idea that some landlords and developers treat violation receipt as simply a cost of doing business. When breaking the data out by violation type we see, in certain categories, declines in penalty payment severe enough to suggest that some landlords and developers may even look at these violations as something along the lines of a _pay-as-you-wish_ cost of doing business.
 
-To put it more quantitatively: with a paid-to-imposed ratio of just 34% in 2018 but an 80% contribution to all penalty dollars imposed, `Construction` penalties in 2018 single-handedly accounted for **73% of all violation-dollars imposed that year having still not been paid**.
+To put it more quantitatively: with a paid-to-imposed ratio of just 34% in 2018 but an 80% contribution to all penalty dollars imposed, `Construction` penalties in 2018 single-handedly account for the current (as of our analysis) lack of payment of *73% of all violation-dollars imposed that year*.
 
 `Quality of Life` violations, with regard to paid-to-imposed ratio tumbled even more drastically - only 7% of those that were issued last year have been paid. These account for only a small percent of the total dollar-value of imposed penalties, although this number grew noticeably between 2018 and 2019.
 
