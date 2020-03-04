@@ -453,13 +453,13 @@ This table shows the percentages of DoB ECB violations:
 
 as well as the paid-to-imposed ratios, also as grouped by hearing year. All data displayed is broken out by year and by violation type, for 2017 - 2019.
 
-We can see that `Construction` violations account for the lion's share of both the number of issued penalties and the total dollar-value of imposed penalties. Additionally, we can see that `Construction` violations show a poor paid-to-imposed ratio, which when paired with the out-sized contributions to `Normalized Violation Counts` leads to a large percentage of violations not being paid. 
+We can see that `Construction` violations account for the lion's share of both the number of issued penalties and the total dollar-value of imposed penalties. Additionally, we can see that `Construction` violations show a poor paid-to-imposed ratio. This relative lack of payment, paired with outsized contributions to `Normalized Imposed Penalty`, has led to a large percentage of the violation-dollars imposed in recent years not being paid.
 
-The large increase in the issuance of these violations (as show in [figure 7](#figure-7)), as construction activity overall has increased, supports the idea that some landlords and developers treat violation receipt as simply a cost of doing business. When breaking the data out by violation type we see, in certain categories, declines in penalty payment severe enough to suggest that some landlords and developers may even look at these violations as something along the lines of a _pay-as-you-wish_ cost of doing business.
+More quantitatively, with a paid-to-imposed ratio of just 34% in 2018 but an 80% contribution to all penalty dollars imposed, `Construction` penalties in 2018 single-handedly account for the current (as of our analysis) *non-payment of 73% of all violation-dollars imposed that year*.
 
-To put it more quantitatively: with a paid-to-imposed ratio of just 34% in 2018 but an 80% contribution to all penalty dollars imposed, `Construction` penalties in 2018 single-handedly account for the current (as of our analysis) *non-payment of 73% of all violation-dollars imposed that year*.
+`Quality of Life` violations, with regard to paid-to-imposed ratio, tumbled even more drastically - only 7% of those that were issued last year have been paid. These account for only a small percent of the total dollar-value of imposed penalties, although that contribution grew noticeably between 2018 and 2019.
 
-`Quality of Life` violations, with regard to paid-to-imposed ratio tumbled even more drastically - only 7% of those that were issued last year have been paid. These account for only a small percent of the total dollar-value of imposed penalties, although this number grew noticeably between 2018 and 2019.
+The large increase in the issuance of `Construction` violations (as show in [figure 7](#figure-7)), as construction activity overall has increased, supports the idea that some landlords and developers treat violation receipt as simply a cost of doing business. When breaking the data out by violation type, we see (in certain categories) declines in penalty payment severe enough to suggest that some landlords and developers may even look at these violations as something along the lines of a _pay-as-you-wish_ cost of doing business.
 
 It's certainly possible that some of the particularly egregious, still-outstanding balances will be remedied in the near future. However, the observable declines in penalty payment could indicate a real and negative change in the city's collection capabilities. Such a change could be driven by some combination of a number of factors, including (for example):
 
@@ -468,7 +468,7 @@ It's certainly possible that some of the particularly egregious, still-outstandi
 - developer and / or landlord malfeasance
 - developer and / or landlord financial strife
 
-It is our hope that this analysis will be taken further (whether by some other party, by NewTrails, or both) so that the residents of New York City can continue to gain insight into the underlying causes for the deteriorating quality of life that so many of us are experiencing.
+It is our hope that this analysis will be taken further (whether by some other party, by NewTrails, or both) so that the residents of New York City can continue to gain insight into the underlying causes of the deteriorating quality of life that so many of us have experienced in recent years.
 
 #### Figure 17
 - [data](#figure-17-data)
