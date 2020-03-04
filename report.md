@@ -453,7 +453,7 @@ This table shows the percentages of DoB ECB violations:
 
 as well as the paid-to-imposed ratios, all broken out by hearing year and by violation type, for 2017 - 2019.
 
-We can see that `Construction` violations account for the lion's share of both the number of issued penalties and the total dollar-value of imposed penalties. Additionally, we can see that `Construction` violations show a poor paid-to-imposed ratio, which when paired with the out-sized contributions to `Normalized Violation Counts` leads to a large percentage of violations not being paid. It would seem, then, that `Construction` violations are driving much of the recent declines in overall paid-to-imposed ratio.
+We can see that `Construction` violations account for the lion's share of both the number of issued penalties and the total dollar-value of imposed penalties. Additionally, we can see that `Construction` violations show a poor paid-to-imposed ratio, which when paired with the out-sized contributions to `Normalized Violation Counts` leads to a large percentage of violations not being paid. 
 
 The large increase in the issuance of these violations (as show in [figure 7](#figure-7)), as construction activity overall has increased, supports the idea that some landlords and developers treat violation receipt as simply a cost of doing business. When breaking the data out by violation type we see, in certain categories, declines in penalty payment severe enough to suggest that some landlords and developers may even look at these violations as something along the lines of a _pay-as-you-wish_ cost of doing business.
 
