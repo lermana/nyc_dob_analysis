@@ -448,10 +448,10 @@ It would appear that the city has trouble collecting on its steeper penalties.
 
 This table shows the percentages of DoB ECB violations:
 
-- issued (counts, grouped by issuance year) 
-- imposed (dollars, grouped by hearing year)
+- issued (in counts, as grouped by issuance year) 
+- imposed (in dollars, as grouped by hearing year)
 
-as well as the paid-to-imposed ratios, all broken out by hearing year and by violation type, for 2017 - 2019.
+as well as the paid-to-imposed ratios, also as grouped by hearing year. All data displayed is broken out by year and by violation type, for 2017 - 2019.
 
 We can see that `Construction` violations account for the lion's share of both the number of issued penalties and the total dollar-value of imposed penalties. Additionally, we can see that `Construction` violations show a poor paid-to-imposed ratio, which when paired with the out-sized contributions to `Normalized Violation Counts` leads to a large percentage of violations not being paid. 
 
