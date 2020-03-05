@@ -1,10 +1,3 @@
-<font family="helios" color="#231F20">
-<style>
-	a {
-		color: #008AD9;
-	}
- </style>
-
 # Why All the Ruckus?
 
 ## Table of Contents
@@ -12,7 +5,6 @@
 <!-- MarkdownTOC autolink="true" markdown_preview="markdown" levels="1,2" -->
 
 - [Executive Summary](#executive-summary)
-- [Acknowledgments](#acknowledgments)
 - [Background](#background)
 - [Data Overview](#data-overview)
 - [High-Level Trends](#high-level-trends)
@@ -102,11 +94,6 @@ The city needs to be more systematic in its enforcement of the building code, wh
 #### Next Steps - Summary
 
 We could further extend this analysis to borough-level and neighborhood-level. Moreover, roping in additional, economic variables could provide additional context. Finally, linking applications and permits to complaints and violations could help the city keep a handle on bad actors and preempt the types of work that are at a high-risk of heading in the wrong direction.
-
-[^](#table-of-contents)
-## Acknowledgments
-
-- come back to this
 
 [^](#table-of-contents)
 ## Background
